@@ -80,13 +80,13 @@
     }
 }
 .footerRow:hover {
-    color: #ff009d;
+    color: #DA18A3;
     transition: 200ms ease-in;
     cursor: pointer;
 }
 
 .footerRowSocial:hover {
-    color: #ff009d;
+    color: #DA18A3;
     transition: 200ms ease-in;
     cursor: pointer;
 } 
