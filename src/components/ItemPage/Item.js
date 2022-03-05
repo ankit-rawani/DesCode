@@ -124,7 +124,6 @@ const RightColumn = ({ pageData, setCheckout }) => {
 const ItemPage = () => {
     let { id } = useParams()
     const pageData = getProfileItems("").filter(item => (item.id.toString() === id))[0]
-    console.log(pageData)
     const [isCheckout, setCheckout] = useState(false)
 
     return (
