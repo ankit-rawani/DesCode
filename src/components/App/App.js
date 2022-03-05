@@ -4,7 +4,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Nav from '../navbar'
 import Home from '../home/Home'
 import Checkout from '../checkout/Checkout'
-import Footer from "../footer/Footer"
+import Footer from "../footer/Footer";
+import Profile from '../Profile/Profile';
+import AllProfileItems from '../../data/AllProfileItems';
 
 function App() {
     return (
@@ -13,7 +15,8 @@ function App() {
                 <Nav />
                 <Routes>
                     <Route exact path="/" element={<Home />} />
-                    <Route exact path="/checkout" element={<Checkout />} />
+                    <Route path="/profile" element={<Profile dpURL="/img/profile-pic.png" name="Mia Ayana" bannerImg="/img/profile-banner.png" items={AllProfileItems} />} />
+                    <Route path="/checkout" element={<Checkout />} />
                 </Routes>
             </Router>
             <Footer />
