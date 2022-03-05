@@ -40,6 +40,10 @@
     color: #888888;
 }
 
+.navLinkActive, .navLink:hover {
+    color: #2D2E36;
+}
+
 .button {
     background: linear-gradient(to right, #eb1484, #c81cc5);
     cursor: pointer;

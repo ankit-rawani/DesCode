@@ -1,12 +1,14 @@
 import React from 'react'
 import styles from './style.module.css'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 
 import logo from '../../images/Light2.png'
 import menu from '../../images/icons/Menu.png'
 
 export default function Nav() {
     const navigate = useNavigate()
+    const { pathname } = useLocation()
+
     return (
         <div className={styles.container}>
             <div>
@@ -27,7 +29,9 @@ export default function Nav() {
                 />
             </div>
             <div
-                className={styles.navLink}
+                className={`${styles.navLink} ${
+                    pathname === '/explore' ? styles.navLinkActive : null
+                }`}
                 onClick={() => {
                     navigate('/explore')
                 }}
@@ -35,7 +39,9 @@ export default function Nav() {
                 Explore
             </div>
             <div
-                className={styles.navLink}
+                className={`${styles.navLink} ${
+                    pathname === '/my-items' ? styles.navLinkActive : null
+                }`}
                 onClick={() => {
                     navigate('/my-items')
                 }}
@@ -43,7 +49,9 @@ export default function Nav() {
                 My Items
             </div>
             <div
-                className={styles.navLink}
+                className={`${styles.navLink} ${
+                    pathname === '/following' ? styles.navLinkActive : null
+                }`}
                 onClick={() => {
                     navigate('/following')
                 }}
