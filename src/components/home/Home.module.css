@@ -6,7 +6,7 @@
 } */
 
 .container {
-    width: 70%;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -119,11 +119,14 @@
 .hotCont {
     text-align: center;
     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .buttonOutline {
     padding: 9px 200px;
-    margin: 60px 0;
+    margin: 60px auto;
     cursor: pointer;
     outline: none;
     color: #da18a3;
@@ -133,4 +136,11 @@
     background: linear-gradient(WHITE, WHITE) padding-box,
         linear-gradient(to right, #eb1484, #c81cc5) border-box;
     border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .buttonOutline {
+        max-width: 300px;
+        padding: 9px 113px;
+    }
 }

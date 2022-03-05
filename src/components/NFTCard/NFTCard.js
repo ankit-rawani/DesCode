@@ -10,7 +10,7 @@ function NFTCard(props) {
             <div className={styles.imageContainer}>
                 <img
                     className={styles.image}
-                    src={`/nfts/${props.img}`}
+                    src={props.imgURL}
                     alt={props.name + ' NFT Image'}
                 />
             </div>

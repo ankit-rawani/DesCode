@@ -19,7 +19,7 @@ function Profile(props) {
                     <Icon name="search" size="24" />
                     <input onChange={(e) => setSearchText(e.target.value)} type="text" value={searchText} placeholder="Search item here" />
                 </div>
-                <div className={styles.formTextInput}>
+                <div className={styles.formTextInput+" "+styles.filterInput}>
                     <input type="text" value="Recently Listed" readOnly />
                     <Icon name="down" size="24" />
                 </div>
@@ -28,17 +28,32 @@ function Profile(props) {
                 <div className={styles.itemsHeading}>Items</div>
                 <div className={styles.items}>
                     {
-                        props.items.map(item => (
-                            <div key={item.id}>
-                                <NFTCard 
-                                    imgURL={item.imgURL} 
-                                    name={item.name} 
-                                    amount={item.amount} 
-                                    liked={item.liked} 
-                                    likes={item.likes}
-                                />
-                            </div>
-                            )
+                        props.items.map(item => {
+                            if(searchText.trim() !== "") {
+                                return item.name.toLowerCase().includes(searchText.toLowerCase()) ? (
+                                    <div key={item.id}>
+                                        <NFTCard 
+                                            imgURL={item.imgURL} 
+                                            name={item.name} 
+                                            amount={item.amount} 
+                                            liked={item.liked} 
+                                            likes={item.likes}
+                                        />
+                                    </div>
+                                ) : ""; 
+                            }
+
+                            return (
+                                <div key={item.id}>
+                                    <NFTCard 
+                                        imgURL={item.imgURL} 
+                                        name={item.name} 
+                                        amount={item.amount} 
+                                        liked={item.liked} 
+                                        likes={item.likes}
+                                    />
+                                </div>
+                            )}
                         )
                     }
                 </div>

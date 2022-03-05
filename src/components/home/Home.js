@@ -75,56 +75,56 @@ const HotBids = () => {
         {
             amount: '1.25',
             name: 'Abstract Smoke Red Blue',
-            img: 'img1.png',
+            img: '/nfts/img1.png',
             liked: true,
             likes: '92',
         },
         {
             amount: '0.20',
             name: 'Mountain Landscape',
-            img: 'img1.png',
+            img: '/nfts/img1.png',
             liked: false,
             likes: '25',
         },
         {
             amount: '0.00',
             name: 'Paint Color on Wall',
-            img: 'img1.png',
+            img: '/nfts/img1.png',
             liked: true,
             likes: '55',
         },
         {
             amount: '0.87',
             name: 'Abstract Patern',
-            img: 'img1.png',
+            img: '/nfts/img1.png',
             liked: true,
             likes: '82',
         },
         {
             amount: '0.09',
             name: 'White Line Grafiti',
-            img: 'img1.png',
+            img: '/nfts/img1.png',
             liked: false,
             likes: '22',
         },
         {
             amount: '0.90',
             name: 'Abstract Triangle',
-            img: 'img1.png',
+            img: '/nfts/img1.png',
             liked: true,
             likes: '71',
         },
         {
             amount: '0.52',
             name: 'Lake Landscape',
-            img: 'img1.png',
+            img: '/nfts/img1.png',
             liked: true,
             likes: '63',
         },
         {
             amount: '0.85',
             name: 'Blue Red Art',
-            img: 'img1.png',
+            img: '/nfts/img1.png',
             liked: false,
             likes: '66',
         },
@@ -139,7 +139,7 @@ const HotBids = () => {
                         key={name}
                         liked={liked}
                         likes={likes}
-                        img={img}
+                        imgURL={img}
                         amount={amount}
                         name={name}
                     />
