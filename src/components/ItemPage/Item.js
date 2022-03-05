@@ -6,6 +6,7 @@ import getProfileItems from '../../data/getProfileItems'
 import getUsers from '../../data/getUsers'
 import Icon from '../Icon/Icon'
 import Checkout from '../checkout/Checkout'
+import { getByDisplayValue } from '@testing-library/react'
 
 const Content = ({ active, amount, setCheckout }) => {
     switch (active) {
@@ -19,7 +20,13 @@ const Content = ({ active, amount, setCheckout }) => {
                         when an unknown printer took a galley of type and
                         scrambled it to make a type specimen book
                     </div>
-                    <button onClick={setCheckout} className={classes.button}>
+                    <button onClick={() => {
+                        if(document.getElementById("modal")){
+                            document.getElementById("modalBg").style.display = "block";
+                            document.getElementById("modal").style.display = "block";
+                        }
+                        setCheckout(true);
+                    }} className={classes.button}>
                         Buy for {amount} ETH
                     </button>
                     <button className={classes.buttonOutline}>
@@ -127,10 +134,10 @@ const ItemPage = () => {
     let { id } = useParams()
     const pageData = getProfileItems("").filter(item => (item.id.toString() === id))[0]
     const [isCheckout, setCheckout] = useState(false)
-
+    console.log(pageData);
     return pageData ? (
         <div className={classes.container}>
-            {isCheckout ? <Checkout className={classes.checkout} /> : null}
+            {isCheckout ? <Checkout className={classes.checkout} imageURL={pageData.imgURL} author={pageData.author} name={pageData.name}/> : null}
             <div className={classes.gridCont}>
                 <div className={classes.col1}>
                     <div className={classes.imgWrapper}>

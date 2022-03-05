@@ -1,68 +1,68 @@
 import React from 'react'
 import styles from './Checkout.module.css'
-import image from '../../images/modalImg.png'
 
-const Checkout = () => {
+const Checkout = ({imageURL, author, name, isCheckout}) => {
     return (
-        <>
-            <div className={styles.modalBg}>
-                <div className={styles.modal}>
+            <div className={styles.modalBg} id="modalBg">
+                <div className={styles.modal} id="modal">
                     <h2 className={styles.title}>Check Out</h2>
                     <hr className={styles.hr} />
-                    <table className={styles.table}>
-                        <thead>
-                            <tr>
-                                <th>Item</th>
-                                <th>Subtotal</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td className={styles.td}>
-                                    <div>
+                    <div className={styles.table}>
+
+                            <div className={styles.row}>
+                                <div className={styles.th}>Item</div>
+                                <div className={styles.th}>Subtotal</div>
+                            </div>
+                            <div className={styles.imageRow}>
+                                    <div className={styles.imageSquare}>
                                         <img
-                                            src={image}
+                                            src={imageURL}
                                             className={styles.img}
                                             alt="modal"
                                         ></img>
+
                                         <div className={styles.imgText}>
                                             <div className={styles.name}>
-                                                Name
+                                                {author}
                                             </div>
                                             <div className={styles.description}>
-                                                Description
+                                                {name}
                                             </div>
                                         </div>
                                     </div>
-                                </td>
-                                <td className={styles.td}>
-                                    <p>4.5 ETH</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td className={styles.td}>
-                                    <p>Total</p>
-                                </td>
-                                <td className={styles.td}>
-                                    <p>4.5 ETH</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <hr className={styles.hr} />
+
+                                <div className={styles.td}>
+                                    <p>4.5 <span className={styles.th}>ETH</span></p>
+                                </div>
+                            </div>
+                            <div className={styles.row}>
+                                <div className={styles.td}>
+                                    <p><span className={styles.th}>Total</span></p>
+                                </div>
+                                <div className={styles.td}>
+                                    <p>4.5 <span className={styles.th}>ETH</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr className={styles.hr} />
                     <div className={styles.buttonGroup}>
                         <div>
-                            <button className={styles.button}>Create</button>
+                            <button className={styles.button}>Checkout</button>
                         </div>
                         <div>
-                            <button className={styles.buttonOutline}>
-                                Connect
+                            <button className={styles.buttonOutline} onClick={() => {
+                                document.getElementById('modalBg').style.display = 'none'
+                                document.getElementById('modal').style.display = 'none'
+                                console.log("closing");
+                            }}>
+                                Close
                             </button>
                         </div>
                     </div>
+                    </div>
+
                 </div>
-            </div>
-        </>
+
     )
 }
 
