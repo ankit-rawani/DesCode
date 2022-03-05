@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Nav from '../navbar'
 import Home from '../home/Home'
 import Checkout from '../checkout/Checkout'
+import Footer from "../footer/Footer"
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                     <Route exact path="/checkout" element={<Checkout />} />
                 </Routes>
             </Router>
+            <Footer />
         </>
     )
 }
