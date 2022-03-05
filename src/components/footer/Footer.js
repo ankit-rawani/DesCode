@@ -74,9 +74,11 @@ export default function Footer() {
              Twitter</p>
           </section>
         </section>
-
         </section>
         
+    </section>
+    <section className={styles.copyright}>
+        &copy; Graphique 2021-21. All right reserved.
     </section>
     </section>
     )
