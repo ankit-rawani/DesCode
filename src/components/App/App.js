@@ -2,7 +2,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Nav from '../navbar'
-import Checkout from '../checkout/Checkout';
+import Home from '../home/Home'
+import Checkout from '../checkout/Checkout'
 
 function App() {
     return (
@@ -10,13 +11,12 @@ function App() {
             <Router>
                 <Nav />
                 <Routes>
-                    <Route path="/" element={<Nav />} />
-                    <Route path="/checkout" element={<Checkout />} />
+                    <Route exact path="/" element={<Home />} />
+                    <Route exact path="/checkout" element={<Checkout />} />
                 </Routes>
             </Router>
         </>
     )
 }
 
-
-export default App;
+export default App

@@ -1,5 +1,82 @@
 /* CSS for Home */
 
-.home {
-    font-size: 48px;
+/* @font-face {
+    font-family: 'Gotham';
+    src: url('../../fonts/GothamBook.ttf');
+} */
+
+.container {
+    width: 70%;
+    margin: auto;
 }
+
+/* ---------------------------------------- BANNER ---------------------------------------- */
+
+.banner {
+    display: flex;
+    background-image: linear-gradient(to right, #eb1484, #c81cc5);
+    padding: 95px 50px;
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    border-radius: 25px;
+    margin-top: 60px;
+    overflow: hidden;
+}
+
+.circle1 {
+    padding: 170px;
+    background-color: white;
+    opacity: 20%;
+    border-radius: 100%;
+    position: absolute;
+    top: 5px;
+    left: 50px;
+}
+
+.circle2 {
+    padding: 170px;
+    background-color: white;
+    opacity: 20%;
+    border-radius: 100%;
+    position: absolute;
+    top: 260px;
+    right: 160px;
+}
+
+.bannerContent {
+    font-family: 'Gotham' !important;
+    line-height: 50.74px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 80%;
+    }
+
+    .banner {
+        font-size: 20px;
+        padding: 50px 16px;
+        margin-top: 20px;
+    }
+
+    .circle1 {
+        padding: 50px;
+        top: 60px;
+        left: 0px;
+    }
+
+    .circle2 {
+        padding: 50px;
+        top: 160px;
+        right: 20px;
+    }
+
+    .bannerContent {
+        line-height: 20px;
+    }
+}
+
+/* ---------------------------------------- TOP SELLERS ---------------------------------------- */
+
+/* ---------------------------------------- HOT BIDS ---------------------------------------- */

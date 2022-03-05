@@ -71,7 +71,7 @@ export default function Nav() {
                 </button>
             </div>
             <div>
-                <img src={menu} className={styles.menu} />
+                <img src={menu} className={styles.menu} alt="menu" />
             </div>
         </div>
     )
