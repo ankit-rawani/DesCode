@@ -13,7 +13,7 @@ export default function Footer() {
         <section className={styles.footerTitle}><div>
                 <img src={logo} alt="Main Logo" className={styles.footerImage}/>
             </div></section>
-          <section className={styles.footerRow}>
+          <section className={styles.footerRowAbout}>
               Blah blah blah
           </section>        
         </section>
