@@ -128,7 +128,7 @@
     margin-top: 25px;
 }
 
-.footerSocial{
+.footerSocial {
     float: right;
 }
 
@@ -160,11 +160,11 @@
         margin-top: 30px;
     }
 
-    .copyright{
+    .copyright {
         text-align: center;
     }
 
-    .footerSocial{
+    .footerSocial {
         float: none;
         margin: 10px auto;
     }

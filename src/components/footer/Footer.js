@@ -6,7 +6,6 @@ import twitter from '../../images/icons/Social/twitter.svg'
 import telegram from '../../images/icons/Social/telegram.svg'
 import discord from '../../images/icons/Social/discord.svg'
 
-
 export default function Footer() {
     return (
         <section>
@@ -33,18 +32,14 @@ export default function Footer() {
                                     placeholder="Your Email"
                                 />
                             </div>
-                            <button className={styles.button}>
-                                Email Me!
-                            </button>
+                            <button className={styles.button}>Email Me!</button>
                         </section>
                     </section>
                     <section className={styles.footerColumn}>
                         <section className={styles.footerTitle}>
                             Graphique NFT
                         </section>
-                        <section className={styles.footerRow}>
-                            Explore
-                        </section>
+                        <section className={styles.footerRow}>Explore</section>
                         <section className={styles.footerRow}>
                             How it Works
                         </section>
@@ -62,9 +57,7 @@ export default function Footer() {
                         <section className={styles.footerRow}>
                             Terms of Service
                         </section>
-                        <section className={styles.footerRow}>
-                            Legal
-                        </section>
+                        <section className={styles.footerRow}>Legal</section>
                         <section className={styles.footerRow}>
                             Privacy Policy
                         </section>
@@ -72,10 +65,8 @@ export default function Footer() {
                 </section>
             </section>
             <section className={styles.copyright}>
-
-               Graphique NITT, All Rights Reserved.
+                Graphique NITT, All Rights Reserved.
                 <p className={styles.footerSocialList}>
-
                     <img
                         src={insta}
                         alt="Insta Logo"

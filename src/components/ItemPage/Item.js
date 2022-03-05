@@ -6,7 +6,7 @@ import getProfileItems from '../../data/getProfileItems'
 import getUsers from '../../data/getUsers'
 import Icon from '../Icon/Icon'
 import Checkout from '../checkout/Checkout'
-import { getByDisplayValue } from '@testing-library/react'
+// import { getByDisplayValue } from '@testing-library/react'
 import PaymentSuccess from '../paymentSuccess/paymentSuccess'
 
 const Content = ({ active, amount, setCheckout }) => {
@@ -21,13 +21,19 @@ const Content = ({ active, amount, setCheckout }) => {
                         when an unknown printer took a galley of type and
                         scrambled it to make a type specimen book
                     </div>
-                    <button onClick={() => {
-                        if(document.getElementById("modal")){
-                            document.getElementById("modalBg").style.display = "block";
-                            document.getElementById("modal").style.display = "block";
-                        }
-                        setCheckout(true);
-                    }} className={classes.button}>
+                    <button
+                        onClick={() => {
+                            if (document.getElementById('modal')) {
+                                document.getElementById(
+                                    'modalBg'
+                                ).style.display = 'block'
+                                document.getElementById('modal').style.display =
+                                    'block'
+                            }
+                            setCheckout(true)
+                        }}
+                        className={classes.button}
+                    >
                         Buy for {amount} ETH
                     </button>
                     <button className={classes.buttonOutline}>
@@ -51,7 +57,7 @@ const Content = ({ active, amount, setCheckout }) => {
 const RightColumn = ({ pageData, setCheckout }) => {
     const { name, amount, liked, likes, author } = pageData
     const [active, setActive] = useState(1)
-    const user = getUsers(author)[0];
+    const user = getUsers(author)[0]
 
     return (
         <div>
@@ -133,15 +139,34 @@ const RightColumn = ({ pageData, setCheckout }) => {
 
 const ItemPage = () => {
     let { id } = useParams()
-    const pageData = getProfileItems("").filter(item => (item.id.toString() === id))[0]
+    const pageData = getProfileItems('').filter(
+        (item) => item.id.toString() === id
+    )[0]
     const [isCheckout, setCheckout] = useState(false)
-    const [paymentStatus, setPaymentStatus] = useState(false);
-    const user = getUsers(pageData.author)[0];
+    const [paymentStatus, setPaymentStatus] = useState(false)
+    const user = getUsers(pageData.author)[0]
 
     return pageData ? (
         <div className={classes.container}>
-            {isCheckout && !paymentStatus ? <Checkout className={classes.checkout} setPaymentStatus={(e) => setPaymentStatus(e)} amount={pageData.amount} imageURL={pageData.imgURL} author={user.name} name={pageData.name}/> : null}
-            { paymentStatus && <PaymentSuccess setCheckout={(e) => setCheckout(e)} setPaymentStatus={(e) => setPaymentStatus(e)} imageURL={pageData.imgURL} author={user.name} name={pageData.name}/>}
+            {isCheckout && !paymentStatus ? (
+                <Checkout
+                    className={classes.checkout}
+                    setPaymentStatus={(e) => setPaymentStatus(e)}
+                    amount={pageData.amount}
+                    imageURL={pageData.imgURL}
+                    author={user.name}
+                    name={pageData.name}
+                />
+            ) : null}
+            {paymentStatus && (
+                <PaymentSuccess
+                    setCheckout={(e) => setCheckout(e)}
+                    setPaymentStatus={(e) => setPaymentStatus(e)}
+                    imageURL={pageData.imgURL}
+                    author={user.name}
+                    name={pageData.name}
+                />
+            )}
             <div className={classes.gridCont}>
                 <div className={classes.col1}>
                     <div className={classes.imgWrapper}>
