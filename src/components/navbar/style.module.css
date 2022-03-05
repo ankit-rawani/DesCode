@@ -13,6 +13,11 @@
     cursor: pointer;
 }
 
+.mobileMenu {
+    z-index: 2;
+    position: absolute;
+}
+
 .searchContainer {
     border-radius: 10px;
     border: #e3e1e3 1px solid;
@@ -40,8 +45,9 @@
     color: #888888;
 }
 
-.navLinkActive, .navLink:hover {
-    color: #2D2E36;
+.navLinkActive,
+.navLink:hover {
+    color: #2d2e36;
 }
 
 .button {
