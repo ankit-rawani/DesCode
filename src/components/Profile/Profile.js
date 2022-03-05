@@ -14,17 +14,17 @@ function Profile(props) {
                 <div className={styles.dp}><img src={props.dpURL} alt={props.name+"'s Image"} /></div>
                 <div className={styles.name}>{props.name}</div>
             </div>
-            {/* <div className={styles.searchContainer}>
-                <div className={styles.searchBG}>
+            <div className={styles.searchContainer}>
+                <div className={styles.formTextInput+" "+styles.searchInput}>
                     <Icon name="search" size="24" />
                     <input onChange={(e) => setSearchText(e.target.value)} type="text" value={searchText} placeholder="Search item here" />
                 </div>
-                <div className={styles.searchBG}>
+                <div className={styles.formTextInput}>
                     <input type="text" value="Recently Listed" readOnly />
                     <Icon name="down" size="24" />
                 </div>
             </div>
-            <div className={styles.itemContainer}>
+            <div className={styles.itemsContainer}>
                 <div className={styles.itemsHeading}>Items</div>
                 <div className={styles.items}>
                     {
@@ -45,8 +45,7 @@ function Profile(props) {
                 <div className={styles.button}>
                     Load More
                 </div>
-            </div> */}
-
+            </div> 
         </div>
     );
 }

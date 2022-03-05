@@ -10,58 +10,58 @@ const AllProfileItems = [
     {
         id: 2,
         imgURL: "/img/NFTImages/NFT2.png",
-        name: "Abstract Smoke Red Blue", 
-        amount: "1.25", 
-        liked: true, 
-        likes: "92"
+        name: "Mountain Landscape", 
+        amount: "0.20", 
+        liked: false, 
+        likes: "25"
     },
     {
         id: 3,
         imgURL: "/img/NFTImages/NFT3.png",
-        name: "Abstract Smoke Red Blue", 
-        amount: "1.25", 
+        name: "Paint Color on Wall", 
+        amount: "0.00", 
         liked: true, 
-        likes: "92"
+        likes: "55"
     },
     {
         id: 4,
         imgURL: "/img/NFTImages/NFT4.png",
-        name: "Abstract Smoke Red Blue", 
-        amount: "1.25", 
+        name: "Abstract Pattern", 
+        amount: "0.87", 
         liked: true, 
-        likes: "92"
+        likes: "82"
     },
     {
         id: 5,
         imgURL: "/img/NFTImages/NFT5.png",
-        name: "Abstract Smoke Red Blue", 
-        amount: "1.25", 
-        liked: true, 
-        likes: "92"
+        name: "White Line Grafiti", 
+        amount: "0.09", 
+        liked: false, 
+        likes: "22"
     },
     {
         id: 6,
         imgURL: "/img/NFTImages/NFT6.png",
-        name: "Abstract Smoke Red Blue", 
-        amount: "1.25", 
+        name: "Abstract Triangle", 
+        amount: "0.90", 
         liked: true, 
-        likes: "92"
+        likes: "71"
     },
     {
         id: 7,
         imgURL: "/img/NFTImages/NFT7.png",
-        name: "Abstract Smoke Red Blue", 
-        amount: "1.25", 
+        name: "Lake Landscape", 
+        amount: "0.52", 
         liked: true, 
-        likes: "92"
+        likes: "63"
     },
     {
         id: 8,
         imgURL: "/img/NFTImages/NFT8.png",
-        name: "Abstract Smoke Red Blue", 
-        amount: "1.25", 
-        liked: true, 
-        likes: "92"
+        name: "Blue Red Art", 
+        amount: "0.85", 
+        liked: false, 
+        likes: "66"
     }
 ]
 

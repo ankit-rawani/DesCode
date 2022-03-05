@@ -1,5 +1,105 @@
 /* CSS for Profile */
 
+.profileContainer {
+    overflow-x: hidden;
+}
+
 .bannerContainer {
+    position: relative;
+    z-index: -1;
     width: 100vw;
+    height: 308px;
+    overflow: hidden;
+}
+
+.dpandname {
+    width: fit-content;
+    margin-top: -104px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dp {
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+    padding: 6px;
+    background-color: #24252D;
+}
+
+.dp img {
+    width: 208px;
+    height: 208px;
+    border-radius: 50%;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    text-align: center;
+    color: #1B1A21;
+    margin-top: 10px;
+}
+
+.searchContainer {
+    display: flex;
+    max-width: 993px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-top: 60px;
+}
+
+.formTextInput {
+    display: flex;
+    align-items: center;
+    border: 1px solid #E3E1E3;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+
+.formTextInput input {
+    border: none;
+    margin-top: 2px;
+    margin-left: 14px;
+    width: 100%;
+    outline: none;
+}
+
+.searchInput {
+    width: 100%;
+    margin-right: 20px;
+}
+
+.itemsContainer {
+    margin-top: 30px;
+    max-width: 993px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.itemsHeading {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    color: #1B1A21;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button {
+    width: fit-content;
 }
