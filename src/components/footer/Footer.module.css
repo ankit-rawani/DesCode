@@ -1,5 +1,6 @@
 .footerContainer {
-    padding: 80px 60px;
+    margin-top: 40px;
+    padding: 30px 60px;
   background: radial-gradient(circle, rgb(32, 0, 23) 0%, rgb(0, 0, 0) 100%);
   @media (max-width: 600px){
     padding: 70px 30px;
@@ -11,17 +12,19 @@
     justify-content: center;
     margin: 0 auto;
     color: white;
+    flex-wrap: wrap;
 }
 .footerWrapperInfo {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 0 auto;
-    flex-wrap: wrap;
     flex: 70%;
     position: relative;
+    flex-wrap: wrap;
     @media (max-width: 600px){
         flex: 100%;
+        text-align: center;
     }
 
 }
@@ -36,7 +39,7 @@
     display: flex;
     flex-direction: column;
     text-align: left;
-    padding-left: 40px;
+    flex-wrap: wrap;
     flex: 1 0 auto;
   }
 
@@ -77,5 +80,6 @@
     }
 
 .footerImage {
-    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }

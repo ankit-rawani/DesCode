@@ -55,8 +55,7 @@ export default function Footer() {
             Platform Status
           </section>
         </section>
-        </section>
-
+        
         <section className={styles.footerColumn}>
         <section className={styles.footerTitle}>Socials</section>
           <section className={styles.footerRow}>
@@ -68,6 +67,8 @@ export default function Footer() {
           <section className={styles.footerRow}>
             Twitter
           </section>
+        </section>
+
         </section>
         
     </section>
