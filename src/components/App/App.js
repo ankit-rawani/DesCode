@@ -7,8 +7,8 @@ import Nav from '../navbar'
 function App() {
     return (
         <>
-            <Nav />
             <Router>
+                <Nav />
                 <Routes>
                     <Route path="/" element={<Home />} />
                 </Routes>
