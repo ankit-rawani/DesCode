@@ -1,16 +1,18 @@
 // import styles from './App.module.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-import Home from '../home/Home'
 import Nav from '../navbar'
+import Home from '../home/Home'
+import Checkout from '../checkout/Checkout'
 
 function App() {
     return (
         <>
-            <Nav />
             <Router>
+                <Nav />
                 <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route exact path="/" element={<Home />} />
+                    <Route exact path="/checkout" element={<Checkout />} />
                 </Routes>
             </Router>
         </>

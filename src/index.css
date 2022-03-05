@@ -1,8 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+@font-face {
+    font-family: 'Gotham';
+    src: url('./fonts/GothamBoldItalic.ttf');
+    font-weight: bold;
+    font-style: italic, oblique;
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url('./fonts/GothamBookItalic.ttf');
+    font-style: italic, oblique;
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url('./fonts/GothamBold.ttf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url('./fonts/GothamBook.ttf');
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Poppins";
+    font-family: 'Poppins';
+    user-select: none;
 }

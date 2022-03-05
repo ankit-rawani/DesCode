@@ -1,0 +1,95 @@
+.modalBg {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(27, 26, 33, 0.3);
+    display: flex;
+}
+
+.modal {
+    width: 65vh;
+    height: 55vh;
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1%;
+    padding-top: 3%;
+    margin: 1%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.imgText {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.img {
+    width: 50%;
+    height: 100%;
+    object-fit: fill;
+    float: left;
+    margin: 1%;
+}
+
+.table {
+    margin: 3%;
+    width: 100%;
+
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    height: 65%;
+    columns: 2;
+    row-gap: 1;
+}
+
+.td {
+    padding-bottom: 1%;
+    margin: 1%;
+    vertical-align: text-top;
+    text-justify: distribute;
+    font-weight: 400;
+}
+
+.hr {
+    border: #e3e1e3;
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button {
+    background: linear-gradient(to right, #eb1484, #c81cc5);
+    padding: 9px 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.buttonOutline {
+    padding: 9px 30px;
+    outline: none;
+    color: #da18a3;
+    font-weight: bold;
+
+    border: 2px solid transparent;
+    background: linear-gradient(WHITE, WHITE) padding-box,
+        linear-gradient(to right, #eb1484, #c81cc5) border-box;
+    border-radius: 10px;
+}
