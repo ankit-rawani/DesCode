@@ -89,9 +89,13 @@
     justify-content: space-between;
 }
 
+.buttonContainer {
+    width: fit-content;
+    margin: 60px auto;
+}
+
 .buttonOutline {
     padding: 9px 200px;
-    margin: 60px auto;
     cursor: pointer;
     outline: none;
     color: #da18a3;

@@ -1,42 +1,30 @@
 .footerContainer {
     margin-top: 40px;
-    padding: 30px 0px;
     border: 1px solid #e3e1e3;
     border-left: #e3e1e3;
     border-right: #e3e1e3;
     background: white;
 }
+
 .footerWrapper {
-    padding: 0px 15%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0 auto;
-    color: #1b1a21;
-    flex-wrap: wrap;
-}
-.footerWrapperInfo {
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
-    margin: 0 auto;
-    flex: 50%;
-    position: relative;
-    flex-wrap: nowrap;
+    max-width: 1000px;
+    margin: auto;
+    color: #1b1a21;
+    flex-wrap: wrap;
+    padding: 25px 19px;
 }
+
 .footerAboutCol {
-    flex: 50%;
-    @media (max-width: 600px) {
-        flex: 100%;
-    }
+    margin-right: 20px;
 }
 
 .footerColumn {
     display: flex;
     flex-direction: column;
     text-align: left;
-    flex-wrap: wrap;
-    flex: 50%;
+    width: initial;
 }
 
 .footerRow {
@@ -44,31 +32,14 @@
     padding-top: 20px;
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     grid-gap: 20px;
-    @media (max-width: 600px) {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    }
-}
-
-.footerRowSocial {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    grid-gap: 20px;
-    @media (max-width: 600px) {
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    }
 }
 
 .footerRowAbout {
-    margin-right: 20px;
-    margin-top: 0px;
-}
-.footerRow:hover {
-    color: #da18a3;
-    transition: 200ms ease-in;
-    cursor: pointer;
+    margin-top: 25px;
+    display: flex;
 }
 
-.footerRowSocial:hover {
+.footerRow:hover {
     color: #da18a3;
     transition: 200ms ease-in;
     cursor: pointer;
@@ -77,23 +48,28 @@
 .footerTitle {
     font-size: 24px;
     color: #1b1a21;
-    margin-bottom: 40px;
-    margin-top: 40px;
     font-weight: bold;
+    margin-top: 32px;
 }
 
 .footerImage {
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
+    width: 160px;
+    height: 32px;
+}
+
+.footerSocialList {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
 }
 
 .footerSocialMedia {
     height: 30px;
-    display: inline-block;
-    vertical-align: middle;
-    object-fit: scale-down;
-    margin-right: 10px;
+    margin: 4px;
 }
 
 .footerSocialMedia:hover {
@@ -104,68 +80,50 @@
 }
 
 .copyright {
-    padding: 0px 15%;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding-right: 19px;
+    padding-left: 19px;
     text-align: left;
     font-weight: bold;
     color: #1b1a21;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .searchContainer {
-    border-radius: 10px;
+    border-radius: 10px 0 0 10px;
     border: #e3e1e3 1px solid;
-    padding: 0px 0px 0px 10px;
-    width: 60%;
-    position: relative;
-    @media (max-width: 600px) {
-        color: white;
-        background-color: #1b1a21;
-    }
+    padding: 12px 18px;
 }
 
 .searchBar {
-    padding: 7px 5px 5px 5px;
-    background-size: 20px;
     outline: none;
     border: none;
-    @media (max-width: 600px) {
-        background-color: #1b1a21;
-    }
-}
-
-.searchBar::placeholder {
-    color: #1b1a21;
-    margin-top: 5px;
-    font-weight: 500;
-    @media (max-width: 600px) {
-        color: white;
-        font-weight: 600;
-    }
+    width: 100%;
 }
 
 .button {
     background: linear-gradient(to right, #eb1484, #c81cc5);
     cursor: pointer;
-    padding: 6px 10px;
+    padding: 9px 24px;
+    width: 60%;
+    font-size: 14px;
+    line-height: 21px;
     outline: none;
     border: none;
     border-radius: 10px;
     color: white;
     font-weight: bold;
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    transform: translate(-50%, -50%);
-    width: 40%;
+    margin-left: -10px;
 }
 
 .footerEmailHead {
     font-weight: bold;
-    margin-top: 0px;
-    padding-top: 0px;
-    margin-bottom: 20px;
     font-size: 16px;
+    line-height: 24px;
+    margin-top: 25px;
 }
 
 .footerSocial{
@@ -173,36 +131,31 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .footerContainer {
-        padding: 70px 30px;
-    }
-
-    .footerWrapper {
-        padding: 40px;
-    }
-
-    .footerWrapperInfo {
-        flex: 100%;
-        text-align: center;
-    }
-
-    .button {
-        transform: translate(-99%, -50%);
+    .footerRow {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
 
     .searchContainer {
-        color: white;
-        background-color: #1b1a21;
-        width: 100%;
+        color: #1b1a21;
+        background-color: white;
+        font-size: 12px;
+        line-height: 18px;
     }
 
-    .searchBar {
-        background-color: #1b1a21;
+    .footerAboutCol {
+        margin-right: 0;
     }
 
-    .searchBar::placeholder {
-        color: white;
-        font-weight: 600;
+    .footerColumn {
+        width: 50%;
+    }
+
+    .copyright {
+        flex-direction: column;
+    }
+
+    .footerSocialList {
+        margin-top: 30px;
     }
 
     .copyright{
