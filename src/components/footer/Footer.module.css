@@ -27,7 +27,7 @@
     margin: 0 auto;
     flex: 50%;
     position: relative;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     @media (max-width: 600px){
         flex: 100%;
         text-align: center;
@@ -46,7 +46,7 @@
     flex-direction: column;
     text-align: left;
     flex-wrap: wrap;
-    flex: 1 0 auto;
+    flex: 50%;
   }
 
 
@@ -158,8 +158,7 @@
     top: 50%;
     left: 100%;
     transform: translate(-50%, -50%);
-    width: 40%;
-}
+    width: 40%;}
 
 .footerEmailHead{
     font-weight: bold;
