@@ -7,6 +7,7 @@ import getUsers from '../../data/getUsers'
 import Icon from '../Icon/Icon'
 import Checkout from '../checkout/Checkout'
 import { getByDisplayValue } from '@testing-library/react'
+import PaymentSuccess from '../paymentSuccess/paymentSuccess'
 
 const Content = ({ active, amount, setCheckout }) => {
     switch (active) {
@@ -134,10 +135,13 @@ const ItemPage = () => {
     let { id } = useParams()
     const pageData = getProfileItems("").filter(item => (item.id.toString() === id))[0]
     const [isCheckout, setCheckout] = useState(false)
-    console.log(pageData);
+    const [paymentStatus, setPaymentStatus] = useState(false);
+    const user = getUsers(pageData.author)[0];
+
     return pageData ? (
         <div className={classes.container}>
-            {isCheckout ? <Checkout className={classes.checkout} imageURL={pageData.imgURL} author={pageData.author} name={pageData.name}/> : null}
+            {isCheckout && !paymentStatus ? <Checkout className={classes.checkout} setPaymentStatus={(e) => setPaymentStatus(e)} amount={pageData.amount} imageURL={pageData.imgURL} author={user.name} name={pageData.name}/> : null}
+            { paymentStatus && <PaymentSuccess setCheckout={(e) => setCheckout(e)} setPaymentStatus={(e) => setPaymentStatus(e)} imageURL={pageData.imgURL} author={user.name} name={pageData.name}/>}
             <div className={classes.gridCont}>
                 <div className={classes.col1}>
                     <div className={classes.imgWrapper}>

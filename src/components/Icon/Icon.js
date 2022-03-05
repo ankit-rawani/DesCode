@@ -25,6 +25,11 @@ function Icon(props) {
                 (props.name === "down") && 
                 <img height={props.size} width={props.size} src="/icons/down.svg" alt="" />
             }
+
+            {
+                (props.name === "close") && 
+                <img height={props.size} width={props.size} src="/icons/close.svg" alt="" />
+            }
         </span>
     )
 }

@@ -9,10 +9,10 @@
 }
 
 .modal {
-    width: 70vh;
-    height: 60vh;
+    width: 586px;
+    height: 480px;
     background-color: #fff;
-    color: #000;
+    color: #2D2E36;
     border-radius: 20px;
     position: absolute;
     left: 50%;
@@ -22,80 +22,56 @@
 }
 
 .title {
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 1%;
-    padding-top: 3%;
-    margin: 1%;
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
-}
-
-.imgText {
-    display: flex;
-    align-items: left;
-    justify-content: center;
-    flex-direction: column;
-    height: 100%;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 29px;
 }
 
 .img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    float: left;
-    margin: 2%;
-    padding: 2%;
+}
+
+.imgContainer {
+    width: 100px;
+    height: 100px;
     overflow: hidden;
+    margin-right: 15px;
 }
 
-.imageSquare {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-}
-
-.table {
-    margin-top: 3%;
-    padding: 4%;
-    width: 100%;
-    display: flex;
-    font-family: 'Poppins', sans-serif;
-    text-align: left;
-    height: 65%;
-    columns: 2;
-    flex-direction: column;
-    justify-content: center;
+.tableContainer {
+    margin-top: 30px;
+    border-top: 1px solid #e3e1e3;
+    border-bottom: 1px solid #e3e1e3;
+    padding: 25px 40px;
 }
 
 .row {
     display: flex;
-    flex-direction: row;
-    align-items: left;
     justify-content: space-between;
-    flex-wrap: wrap;
-    height: 10%;
-    margin-bottom: 5%;
+}
+
+.row > div:first-child {
+    flex: 75%;
 }
 
 .imageRow {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    height: 100%;
-    margin-bottom: 5%;
+    align-items: center;
+    padding-right: 20px;
 }
 
-.hr {
-    border: #e3e1e3;
+.itemRow {
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 .buttonGroup {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    margin-top: 30px;
 }
 
 .button {
@@ -105,48 +81,43 @@
     border: none;
     border-radius: 10px;
     color: white;
-    font-weight: bold;
-    margin-right: 50%;
-    margin-bottom: 5%;
-    margin: 0;
+    font-weight: 600;
+    margin-right: 20px;
 }
 
 .buttonOutline {
-    padding: 9px 30px;
+    padding: 7px 28px;
     outline: none;
     color: #da18a3;
-    font-weight: bold;
+    font-weight: 600;
 
     border: 2px solid transparent;
     background: linear-gradient(WHITE, WHITE) padding-box,
         linear-gradient(to right, #eb1484, #c81cc5) border-box;
     border-radius: 10px;
-    margin-right: 50%;
 }
 
-.name {
-    font-family: Poppins;
-    font-style: normal;
+.boldBody {
     font-weight: 600;
-    font-size: 1rem;
-    color: #2D2E36;
 }
 
-.description {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1rem;
-    color: #2D2E36;
-}
+@media screen and (max-width: 600px) {
+    .modal {
+        width: 100vw;
+        top: 100vh;
+        left: 0;
+        transform: translate(0, -100%);
+        height: 480px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
 
+    .imgContainer {
+        width: 52px;
+        height: 52px;
+    }
 
-.th {
-    font-family: Poppins;
-    font-style: bold;
-    font-weight: 600;
-    font-size: 1rem;
-    line-height: 30px;
-    color: #2D2E36;
-    margin-bottom: 3%;
+    .imageRow {
+        align-items: flex-start;
+    }
 }

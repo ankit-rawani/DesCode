@@ -1,53 +1,38 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './Checkout.module.css'
 
-const Checkout = ({imageURL, author, name, isCheckout}) => {
+const Checkout = ({imageURL, author, name, setPaymentStatus, amount}) => {
     return (
             <div className={styles.modalBg} id="modalBg">
                 <div className={styles.modal} id="modal">
                     <h2 className={styles.title}>Check Out</h2>
-                    <hr className={styles.hr} />
-                    <div className={styles.table}>
-
+                    <div className={styles.tableContainer}>
+                        <div className={styles.table}>
                             <div className={styles.row}>
-                                <div className={styles.th}>Item</div>
-                                <div className={styles.th}>Subtotal</div>
+                                <div className={styles.boldBody}>Item</div>
+                                <div className={styles.boldBody}>Subtotal</div>
                             </div>
-                            <div className={styles.imageRow}>
-                                    <div className={styles.imageSquare}>
-                                        <img
-                                            src={imageURL}
-                                            className={styles.img}
-                                            alt="modal"
-                                        ></img>
-
-                                        <div className={styles.imgText}>
-                                            <div className={styles.name}>
-                                                {author}
-                                            </div>
-                                            <div className={styles.description}>
-                                                {name}
-                                            </div>
-                                        </div>
+                            <div className={styles.row+" "+styles.itemRow}>
+                                <div className={styles.imageRow}>
+                                    <div className={styles.imgContainer}>
+                                        <img className={styles.img} src={imageURL} alt="" />
                                     </div>
-
-                                <div className={styles.td}>
-                                    <p>4.5 <span className={styles.th}>ETH</span></p>
+                                    <div>
+                                        <div className={styles.boldBody}>{author}</div>
+                                        <p>{name}</p>
+                                    </div>
                                 </div>
+                                <div>{amount} <span className={styles.boldBody}>ETH</span></div>
                             </div>
                             <div className={styles.row}>
-                                <div className={styles.td}>
-                                    <p><span className={styles.th}>Total</span></p>
-                                </div>
-                                <div className={styles.td}>
-                                    <p>4.5 <span className={styles.th}>ETH</span></p>
-                                </div>
+                                <div className={styles.boldBody}>Total</div>
+                                <div>{amount} <span className={styles.boldBody}>ETH</span></div>
                             </div>
                         </div>
-                        <hr className={styles.hr} />
+                    </div>
                     <div className={styles.buttonGroup}>
                         <div>
-                            <button className={styles.button}>Checkout</button>
+                            <button onClick={() => setPaymentStatus(true)} className={styles.button}>Checkout</button>
                         </div>
                         <div>
                             <button className={styles.buttonOutline} onClick={() => {
@@ -55,7 +40,7 @@ const Checkout = ({imageURL, author, name, isCheckout}) => {
                                 document.getElementById('modal').style.display = 'none'
                                 console.log("closing");
                             }}>
-                                Close
+                                Cancel
                             </button>
                         </div>
                     </div>
