@@ -13,7 +13,7 @@ const CreateItem = () => {
             <div className={styles.label}>Upload File</div>
             <div className={styles.uploadBox}>
                 <p className={styles.uploadTitle}>JPG, PNG, GIF, SVG, WEBM, MP3, MP4. Max 100mb.</p>
-                <img className={styles.img} src={imageIcon}></img>
+                <img className={styles.img} src={imageIcon} alt=""></img>
                 <p><span className={styles.span}>Drag and Drop File</span></p>
                 <p>or <span className={styles.span}>browse media on your device</span></p>
             </div>

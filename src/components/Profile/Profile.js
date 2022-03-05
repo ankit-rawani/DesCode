@@ -15,7 +15,7 @@ function Profile() {
     const user = getUsers(params.id)[0];
     return (
         <div className={styles.profileContainer}>
-            <div className={styles.bannerContainer}><img src={user.bannerImg} /></div>
+            <div className={styles.bannerContainer}><img src={user.bannerImg} alt="banner" /></div>
             <div className={styles.dpandname}>
                 <div className={styles.dp}><img src={user.img} alt={user.name+"'s Image"} /></div>
                 <div className={styles.name}>{user.name}</div>
