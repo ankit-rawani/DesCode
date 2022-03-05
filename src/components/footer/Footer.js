@@ -76,25 +76,25 @@ export default function Footer() {
             </section>
             <section className={styles.copyright}>
                 &copy; Graphique 2021-22. All right reserved.
-                <p style={{ float: 'right' }}>
+                <p className={styles.footerSocial}>
                     <img
                         src={insta}
-                        alt="Main Logo"
+                        alt="Insta Logo"
                         className={styles.footerSocialMedia}
                     />
                     <img
                         src={twitter}
-                        alt="Main Logo"
+                        alt="Twitter Logo"
                         className={styles.footerSocialMedia}
                     />
                     <img
                         src={telegram}
-                        alt="Main Logo"
+                        alt="Telegram Logo"
                         className={styles.footerSocialMedia}
                     />
                     <img
                         src={discord}
-                        alt="Main Logo"
+                        alt="Discord Logo"
                         className={styles.footerSocialMedia}
                     />
                 </p>
