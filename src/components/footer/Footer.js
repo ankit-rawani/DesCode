@@ -6,6 +6,7 @@ import twitter from '../../images/icons/Social/twitter.svg'
 import telegram from '../../images/icons/Social/telegram.svg'
 import discord from '../../images/icons/Social/discord.svg'
 
+
 export default function Footer() {
     return (
         <section>
@@ -75,7 +76,7 @@ export default function Footer() {
                 </section>
             </section>
             <section className={styles.copyright}>
-                &copy; Graphique 2021-22. All right reserved.
+               Graphique NITT, All Rights Reserved.
                 <p className={styles.footerSocial}>
                     <img
                         src={insta}

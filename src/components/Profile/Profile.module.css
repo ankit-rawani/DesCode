@@ -7,9 +7,12 @@
 .bannerContainer {
     position: relative;
     z-index: -1;
-    width: 100vw;
     height: 308px;
     overflow: hidden;
+}
+
+.bannerImage{
+    width: 100%;
 }
 
 .filterInput input {
