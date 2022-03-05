@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './Icon.module.css';
 
+// USAGE: <Icon name="heart" size="24" />
+
 function Icon(props) {
     return (
         <span className={styles.icon}>
@@ -12,6 +14,16 @@ function Icon(props) {
             {
                 (props.name === "heart-filled") && 
                 <img height={props.size} width={props.size} src="/icons/heart-filled.svg" alt="" />
+            }
+
+            {
+                (props.name === "search") && 
+                <img height={props.size} width={props.size} src="/icons/search.svg" alt="" />
+            }
+
+            {
+                (props.name === "down") && 
+                <img height={props.size} width={props.size} src="/icons/down.svg" alt="" />
             }
         </span>
     )
