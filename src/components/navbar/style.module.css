@@ -57,7 +57,7 @@
     color: #da18a3;
     font-weight: bold;
 
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     background: linear-gradient(WHITE, WHITE) padding-box,
         linear-gradient(to right, #eb1484, #c81cc5) border-box;
     border-radius: 10px;
