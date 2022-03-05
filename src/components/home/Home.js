@@ -59,7 +59,7 @@ const HotBids = () => {
                                 imgURL={imgURL}
                                 amount={amount}
                                 name={name}
-                                idx={index}
+                                idx={index+1}
                             />
                         </div>
                     )

@@ -126,7 +126,7 @@ const ItemPage = () => {
     const pageData = getProfileItems("").filter(item => (item.id.toString() === id))[0]
     const [isCheckout, setCheckout] = useState(false)
 
-    return (
+    return pageData ? (
         <div className={classes.container}>
             {isCheckout ? <Checkout className={classes.checkout} /> : null}
             <div className={classes.gridCont}>
@@ -147,6 +147,11 @@ const ItemPage = () => {
                     />
                 </div>
             </div>
+        </div>
+    ) : (
+        <div className={classes.errContainer}>
+            <div className={classes.errHeading}>Error</div>
+            <div>Item not found.</div>
         </div>
     )
 }
