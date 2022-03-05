@@ -144,6 +144,10 @@
         height: 271px;
     }
 
+    .bannerImage {
+        width: auto;
+    }
+
     .dpandname {
         margin-top: -60px;
     }
