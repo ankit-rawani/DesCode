@@ -51,7 +51,8 @@
 
 @media only screen and (max-width: 600px) {
     .container {
-        width: 80%;
+        width: auto;
+        margin: 10px;
     }
 
     .banner {
@@ -79,4 +80,57 @@
 
 /* ---------------------------------------- TOP SELLERS ---------------------------------------- */
 
+.sellers {
+    margin: auto;
+    margin-top: 60px;
+}
+
+.sellerTitle {
+    font-weight: 600;
+    font-size: 28px;
+    color: #1b1a21;
+}
+
+.sellerCont {
+    text-align: center;
+    max-height: 250px;
+    overflow-x: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.sellerCont::-webkit-scrollbar {
+    display: none;
+}
+
+.sellerCard {
+    display: inline-block;
+}
+
+@media only screen and (max-width: 600px) {
+    .sellerTitle {
+        margin-left: 20px;
+    }
+}
+
 /* ---------------------------------------- HOT BIDS ---------------------------------------- */
+
+.hotCont {
+    text-align: center;
+    margin: auto;
+}
+
+.buttonOutline {
+    padding: 9px 200px;
+    margin: 60px 0;
+    cursor: pointer;
+    outline: none;
+    color: #da18a3;
+    font-weight: bold;
+
+    border: 1px solid transparent;
+    background: linear-gradient(WHITE, WHITE) padding-box,
+        linear-gradient(to right, #eb1484, #c81cc5) border-box;
+    border-radius: 10px;
+}

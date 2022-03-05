@@ -1,9 +1,10 @@
 .card {
+    display: inline-block;
     font-family: 'Poppins', sans-serif;
     border-radius: 20px;
-    border: 1px solid #E3E1E3;
+    border: 1px solid #e3e1e3;
     background-color: #ffffff;
-    color: #1B1A21;
+    color: #1b1a21;
     padding: 11px;
     width: 180px;
     height: 200px;
@@ -14,7 +15,7 @@
     width: 33px;
     height: 33px;
     border-radius: 50%;
-    background-color: #DA18A3;
+    background-color: #da18a3;
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;
@@ -63,7 +64,6 @@
     font-weight: 600;
 }
 
-
 @media screen and (max-width: 600px) {
     .card {
         width: 130px;
@@ -81,7 +81,6 @@
         line-height: 18px;
         padding-top: 3px;
     }
-
 
     .name {
         font-size: 14px;
