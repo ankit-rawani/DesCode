@@ -164,7 +164,7 @@
     }
 
     .hotCont {
-        grid-template-columns: repeat(auto-fill, 145px);
+        grid-template-columns: 1fr 1fr;
         grid-gap: 15px;
     }
 
