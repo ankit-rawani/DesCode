@@ -28,7 +28,9 @@ function App() {
                     />
                     <Route exact path="/home" element={<Home />} />
                     <Route exact path="/create" element={<CreateItem />} />
-                    <Route exact path="/item/:id" element={<ItemPage />} />
+                    <Route path="/item" element={<ItemPage />}>
+                        <Route path=":id" element={<ItemPage />} />
+                    </Route>
                     <Route path="/checkout" element={<Checkout />} />
                     <Route path="/profile" element={<Profile />}>
                         <Route path=":id" element={<Profile />} />

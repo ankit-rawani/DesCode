@@ -3,6 +3,7 @@ import classes from './item.module.css'
 
 import { useParams } from 'react-router-dom'
 import getProfileItems from '../../data/getProfileItems'
+import getUsers from '../../data/getUsers'
 import Icon from '../Icon/Icon'
 import Checkout from '../checkout/Checkout'
 
@@ -40,8 +41,9 @@ const Content = ({ active, amount, setCheckout }) => {
 }
 
 const RightColumn = ({ pageData, setCheckout }) => {
-    const { name, amount, liked, likes } = pageData
+    const { name, amount, liked, likes, author } = pageData
     const [active, setActive] = useState(1)
+    const user = getUsers(author)[0];
 
     return (
         <div>
@@ -69,10 +71,10 @@ const RightColumn = ({ pageData, setCheckout }) => {
                 <div className={classes.creatorWrapper}>
                     <img
                         className={classes.creatorImg}
-                        src="/img/sellers/img1.png"
+                        src={user.img}
                         alt="creator"
                     ></img>
-                    <div className={classes.creatorName}>Mia Ayana</div>
+                    <div className={classes.creatorName}>{user.name}</div>
                 </div>
             </div>
 
