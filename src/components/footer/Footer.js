@@ -61,15 +61,15 @@ export default function Footer() {
         
         <section className={styles.footerColumn}>
         <section className={styles.footerTitle}>Socials</section>
-          <section className={styles.footerRow}>
+          <section className={styles.footerRowSocial}>
             <p className={styles.socialPara}><img src={fb} alt="Facebook Logo" className={styles.footerSocialMedia}/>
              Facebook</p>
           </section>
-          <section className={styles.footerRow}>
+          <section className={styles.footerRowSocial}>
           <p><img src={insta} alt="Facebook Logo" className={styles.footerSocialMedia}/>
              Instagram</p>
           </section>
-          <section className={styles.footerRow}>
+          <section className={styles.footerRowSocial}>
           <p><img src={twitter} alt="Facebook Logo" className={styles.footerSocialMedia}/>
              Twitter</p>
           </section>
