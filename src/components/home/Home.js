@@ -72,7 +72,7 @@ export default function Home() {
             <Banner />
             <TopSellers />
             <HotBids />
-            <div className={classes.hotCont}>
+            <div className={classes.buttonContainer}>
                 <button className={classes.buttonOutline}>Load More</button>
             </div>
         </div>

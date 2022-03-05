@@ -22,11 +22,9 @@ export default function Footer() {
                                 />
                             </div>
                         </section>
-                        <section className={styles.footerRowAbout}>
-                            <p className={styles.footerEmailHead}>
-                                Get the Latest Updates
-                            </p>
-                        </section>
+                        <p className={styles.footerEmailHead}>
+                            Get the Latest Updates
+                        </p>
                         <section className={styles.footerRowAbout}>
                             <div className={styles.searchContainer}>
                                 <input
@@ -34,50 +32,50 @@ export default function Footer() {
                                     type="text"
                                     placeholder="Your Email"
                                 />
-                                <button className={styles.button}>
-                                    Email Me!
-                                </button>
                             </div>
+                            <button className={styles.button}>
+                                Email Me!
+                            </button>
                         </section>
                     </section>
-                    <section className={styles.footerWrapperInfo}>
-                        <section className={styles.footerColumn}>
-                            <section className={styles.footerTitle}>
-                                Graphique NFT
-                            </section>
-                            <section className={styles.footerRow}>
-                                Explore
-                            </section>
-                            <section className={styles.footerRow}>
-                                How it Works
-                            </section>
-                            <section className={styles.footerRow}>
-                                Contact Us
-                            </section>
+                    <section className={styles.footerColumn}>
+                        <section className={styles.footerTitle}>
+                            Graphique NFT
                         </section>
-                        <section className={styles.footerColumn}>
-                            <section className={styles.footerTitle}>
-                                Support
-                            </section>
-                            <section className={styles.footerRow}>
-                                Help Center
-                            </section>
-                            <section className={styles.footerRow}>
-                                Terms of Service
-                            </section>
-                            <section className={styles.footerRow}>
-                                Legal
-                            </section>
-                            <section className={styles.footerRow}>
-                                Privacy Policy
-                            </section>
+                        <section className={styles.footerRow}>
+                            Explore
+                        </section>
+                        <section className={styles.footerRow}>
+                            How it Works
+                        </section>
+                        <section className={styles.footerRow}>
+                            Contact Us
+                        </section>
+                    </section>
+                    <section className={styles.footerColumn}>
+                        <section className={styles.footerTitle}>
+                            Support
+                        </section>
+                        <section className={styles.footerRow}>
+                            Help Center
+                        </section>
+                        <section className={styles.footerRow}>
+                            Terms of Service
+                        </section>
+                        <section className={styles.footerRow}>
+                            Legal
+                        </section>
+                        <section className={styles.footerRow}>
+                            Privacy Policy
                         </section>
                     </section>
                 </section>
             </section>
             <section className={styles.copyright}>
+
                Graphique NITT, All Rights Reserved.
-                <p className={styles.footerSocial}>
+                <p className={styles.footerSocialList}>
+
                     <img
                         src={insta}
                         alt="Insta Logo"
