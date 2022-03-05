@@ -69,7 +69,7 @@ const RightColumn = ({ pageData, setCheckout }) => {
                 <div className={classes.creatorWrapper}>
                     <img
                         className={classes.creatorImg}
-                        src="/sellers/img1.png"
+                        src="/img/sellers/img1.png"
                         alt="creator"
                     ></img>
                     <div className={classes.creatorName}>Mia Ayana</div>

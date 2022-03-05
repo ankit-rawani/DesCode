@@ -5,7 +5,7 @@ import SellerCard from '../SellerCard/SellerCard.js'
 import NFTCard from '../NFTCard/NFTCard.js'
 import getUsers from '../../data/getUsers'
 import getProfileItems from '../../data/getProfileItems'
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom'
 
 const Banner = () => {
     return (
@@ -21,7 +21,7 @@ const Banner = () => {
 }
 
 const TopSellers = () => {
-    const sellerArray = getUsers("");
+    const sellerArray = getUsers('')
 
     return (
         <div className={classes.sellers}>
@@ -44,21 +44,22 @@ const TopSellers = () => {
 }
 
 const HotBids = () => {
-    const bidsArray = getProfileItems("")
+    const bidsArray = getProfileItems('')
 
     return (
         <div className={classes.sellers}>
             <div className={classes.sellerTitle}>Hot Bids</div>
             <div className={classes.hotCont}>
                 {bidsArray.map(({ liked, likes, imgURL, amount, name }) => (
-                    <NFTCard
-                        key={name}
-                        liked={liked}
-                        likes={likes}
-                        imgURL={imgURL}
-                        amount={amount}
-                        name={name}
-                    />
+                    <div key={name} className={classes.cardWrapper}>
+                        <NFTCard
+                            liked={liked}
+                            likes={likes}
+                            imgURL={imgURL}
+                            amount={amount}
+                            name={name}
+                        />
+                    </div>
                 ))}
             </div>
         </div>
