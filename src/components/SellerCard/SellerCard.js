@@ -10,7 +10,7 @@ function SellerCard(props) {
             <div className={styles.dpContainer}>
                 <img
                     className={styles.dp}
-                    src={`/sellers/${props.img}`}
+                    src={props.img}
                     alt={props.name + "'s image"}
                 />
                 <img

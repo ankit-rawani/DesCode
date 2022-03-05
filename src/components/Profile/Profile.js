@@ -2,17 +2,23 @@ import React, { useState } from 'react';
 import styles from './Profile.module.css';
 import Icon from "../Icon/Icon";
 import NFTCard from '../NFTCard/NFTCard';
+import { useParams } from 'react-router-dom';
+import getProfileItems from '../../data/getProfileItems';
+import getUsers from '../../data/getUsers';
 
 // USAGE: <Profile dpURL="/img/imgname.png" name="Name" bannerImg="/img/bannerImg" items={objContainingAllDetails} />
 
-function Profile(props) {
+function Profile() {
     const [searchText, setSearchText] = useState("");
+    const params = useParams();
+    const items = getProfileItems(params.id);
+    const user = getUsers(params.id)[0];
     return (
         <div className={styles.profileContainer}>
-            <div className={styles.bannerContainer}><img src={props.bannerImg} /></div>
+            <div className={styles.bannerContainer}><img src={user.bannerImg} /></div>
             <div className={styles.dpandname}>
-                <div className={styles.dp}><img src={props.dpURL} alt={props.name+"'s Image"} /></div>
-                <div className={styles.name}>{props.name}</div>
+                <div className={styles.dp}><img src={user.img} alt={user.name+"'s Image"} /></div>
+                <div className={styles.name}>{user.name}</div>
             </div>
             <div className={styles.searchContainer}>
                 <div className={styles.formTextInput+" "+styles.searchInput}>
@@ -28,7 +34,7 @@ function Profile(props) {
                 <div className={styles.itemsHeading}>Items</div>
                 <div className={styles.items}>
                     {
-                        props.items.map(item => {
+                        items.map(item => {
                             if(searchText.trim() !== "") {
                                 return item.name.toLowerCase().includes(searchText.toLowerCase()) ? (
                                     <div key={item.id}>

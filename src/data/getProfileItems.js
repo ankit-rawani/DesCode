@@ -5,7 +5,8 @@ const AllProfileItems = [
         name: "Abstract Smoke Red Blue", 
         amount: "1.25", 
         liked: true, 
-        likes: "92"
+        likes: "92",
+        author: "mia_ayana"
     },
     {
         id: 2,
@@ -13,7 +14,8 @@ const AllProfileItems = [
         name: "Mountain Landscape", 
         amount: "0.20", 
         liked: false, 
-        likes: "25"
+        likes: "25",
+        author: "mia_ayana"
     },
     {
         id: 3,
@@ -21,7 +23,8 @@ const AllProfileItems = [
         name: "Paint Color on Wall", 
         amount: "0.00", 
         liked: true, 
-        likes: "55"
+        likes: "55",
+        author: "mia_ayana"
     },
     {
         id: 4,
@@ -29,7 +32,8 @@ const AllProfileItems = [
         name: "Abstract Pattern", 
         amount: "0.87", 
         liked: true, 
-        likes: "82"
+        likes: "82",
+        author: "mia_ayana"
     },
     {
         id: 5,
@@ -37,7 +41,8 @@ const AllProfileItems = [
         name: "White Line Grafiti", 
         amount: "0.09", 
         liked: false, 
-        likes: "22"
+        likes: "22",
+        author: "mia_ayana"
     },
     {
         id: 6,
@@ -45,7 +50,8 @@ const AllProfileItems = [
         name: "Abstract Triangle", 
         amount: "0.90", 
         liked: true, 
-        likes: "71"
+        likes: "71",
+        author: "rian_leon"
     },
     {
         id: 7,
@@ -53,7 +59,8 @@ const AllProfileItems = [
         name: "Lake Landscape", 
         amount: "0.52", 
         liked: true, 
-        likes: "63"
+        likes: "63",
+        author: "rian_leon"
     },
     {
         id: 8,
@@ -61,8 +68,14 @@ const AllProfileItems = [
         name: "Blue Red Art", 
         amount: "0.85", 
         liked: false, 
-        likes: "66"
+        likes: "66",
+        author: "lady_young"
     }
 ]
 
-export default AllProfileItems;
+function getProfileItems(id) {
+    if(id === "") return AllProfileItems;
+    return AllProfileItems.filter(item => (id === item.author));
+}
+
+export default getProfileItems;
