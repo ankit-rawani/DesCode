@@ -52,12 +52,13 @@ function Profile() {
 
                             return (
                                 <div key={item.id}>
-                                    <NFTCard 
-                                        imgURL={item.imgURL} 
-                                        name={item.name} 
-                                        amount={item.amount} 
-                                        liked={item.liked} 
+                                    <NFTCard
+                                        imgURL={item.imgURL}
+                                        name={item.name}
+                                        amount={item.amount}
+                                        liked={item.liked}
                                         likes={item.likes}
+                                        idx={item.id}
                                     />
                                 </div>
                             )}
