@@ -2,11 +2,19 @@ import React from 'react'
 import Icon from '../Icon/Icon'
 import styles from './NFTCard.module.css'
 
+import { useNavigate } from 'react-router-dom'
+
 // USAGE: <NFTCard imgURL="/img/card-placeholder.png" name="NFT Name" amount="0.00" liked likes="92" />
 
 function NFTCard(props) {
+    const navigate = useNavigate()
     return (
-        <div className={styles.card}>
+        <div
+            className={styles.card}
+            onClick={() => {
+                navigate(`/item/${props.idx}`)
+            }}
+        >
             <div className={styles.imageContainer}>
                 <img
                     className={styles.image}

@@ -44,6 +44,7 @@ function Profile() {
                                             amount={item.amount} 
                                             liked={item.liked} 
                                             likes={item.likes}
+                                            idx={item.id}
                                         />
                                     </div>
                                 ) : ""; 

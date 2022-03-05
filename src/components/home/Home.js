@@ -50,17 +50,20 @@ const HotBids = () => {
         <div className={classes.sellers}>
             <div className={classes.sellerTitle}>Hot Bids</div>
             <div className={classes.hotCont}>
-                {bidsArray.map(({ liked, likes, imgURL, amount, name }) => (
-                    <div key={name} className={classes.cardWrapper}>
-                        <NFTCard
-                            liked={liked}
-                            likes={likes}
-                            imgURL={imgURL}
-                            amount={amount}
-                            name={name}
-                        />
-                    </div>
-                ))}
+                {bidsArray.map(
+                    ({ liked, likes, imgURL, amount, name }, index) => (
+                        <div key={name} className={classes.cardWrapper}>
+                            <NFTCard
+                                liked={liked}
+                                likes={likes}
+                                imgURL={imgURL}
+                                amount={amount}
+                                name={name}
+                                idx={index}
+                            />
+                        </div>
+                    )
+                )}
             </div>
         </div>
     )
