@@ -84,9 +84,10 @@
 .hotCont {
     text-align: center;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 230px);
     justify-content: space-between;
+    grid-gap: 20px;
 }
 
 .buttonContainer {
@@ -142,12 +143,6 @@
         font-size: 40px;
         padding: 80px 40px;
     }
-    .cardWrapper {
-        margin: 20px;
-    }
-    .cardWrapper {
-        flex: 1 0 33%;
-    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -173,10 +168,8 @@
     }
 
     .hotCont {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content: center;
-        gap: 10px 5px;
+        grid-template-columns: repeat(auto-fill, 145px);
+        grid-gap: 15px;
     }
 
     .buttonOutline {

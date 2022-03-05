@@ -27,6 +27,7 @@
     box-sizing: border-box;
     font-family: 'Poppins';
     user-select: none;
+    text-decoration: none;
 }
 
 body {

@@ -51,7 +51,7 @@ const AllProfileItems = [
         amount: "0.90", 
         liked: true, 
         likes: "71",
-        author: "rian_leon"
+        author: "mia_ayana"
     },
     {
         id: 7,
