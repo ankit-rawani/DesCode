@@ -90,7 +90,11 @@ function Profile() {
                             )
                         })}
                     </div>
-                    <div className={styles.button}>Load More</div>
+                    {items.length === 0 ? (
+                        <div className={styles.nothing}>No items found.</div>
+                    ) : (
+                        <div className={styles.button}>Load More</div>
+                    )}
                 </div>
             </div>
         )

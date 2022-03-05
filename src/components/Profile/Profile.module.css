@@ -135,6 +135,10 @@
     -webkit-text-fill-color: transparent;
 }
 
+.nothing {
+    margin-bottom: 30px;
+}
+
 @media screen and (max-width: 600px) {
     .bannerContainer {
         height: 271px;

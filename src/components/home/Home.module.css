@@ -71,10 +71,6 @@
     scrollbar-width: none;
 }
 
-.sellerCont::-webkit-scrollbar {
-    /* display: none; */
-}
-
 .sellerCard {
     display: inline-block;
 }
@@ -205,5 +201,9 @@
     }
     .sellerTitle {
         margin-left: 20px;
+    }
+
+    .sellerCont::-webkit-scrollbar {
+        display: none;
     }
 }
