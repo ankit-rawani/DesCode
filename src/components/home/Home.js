@@ -1,6 +1,7 @@
 import React from 'react'
 import classes from './Home.module.css'
 
+import AllProfileItems from '../../data/AllProfileItems'
 import SellerCard from '../SellerCard/SellerCard.js'
 import NFTCard from '../NFTCard/NFTCard.js'
 
@@ -71,79 +72,22 @@ const TopSellers = () => {
 }
 
 const HotBids = () => {
-    const bidsArray = [
-        {
-            amount: '1.25',
-            name: 'Abstract Smoke Red Blue',
-            img: '/nfts/img1.png',
-            liked: true,
-            likes: '92',
-        },
-        {
-            amount: '0.20',
-            name: 'Mountain Landscape',
-            img: '/nfts/img1.png',
-            liked: false,
-            likes: '25',
-        },
-        {
-            amount: '0.00',
-            name: 'Paint Color on Wall',
-            img: '/nfts/img1.png',
-            liked: true,
-            likes: '55',
-        },
-        {
-            amount: '0.87',
-            name: 'Abstract Patern',
-            img: '/nfts/img1.png',
-            liked: true,
-            likes: '82',
-        },
-        {
-            amount: '0.09',
-            name: 'White Line Grafiti',
-            img: '/nfts/img1.png',
-            liked: false,
-            likes: '22',
-        },
-        {
-            amount: '0.90',
-            name: 'Abstract Triangle',
-            img: '/nfts/img1.png',
-            liked: true,
-            likes: '71',
-        },
-        {
-            amount: '0.52',
-            name: 'Lake Landscape',
-            img: '/nfts/img1.png',
-            liked: true,
-            likes: '63',
-        },
-        {
-            amount: '0.85',
-            name: 'Blue Red Art',
-            img: '/nfts/img1.png',
-            liked: false,
-            likes: '66',
-        },
-    ]
-
     return (
         <div className={classes.sellers}>
             <div className={classes.sellerTitle}>Hot Bids</div>
             <div className={classes.hotCont}>
-                {bidsArray.map(({ liked, likes, img, amount, name }) => (
-                    <NFTCard
-                        key={name}
-                        liked={liked}
-                        likes={likes}
-                        imgURL={img}
-                        amount={amount}
-                        name={name}
-                    />
-                ))}
+                {AllProfileItems.map(
+                    ({ liked, likes, imgURL, amount, name }) => (
+                        <NFTCard
+                            key={name}
+                            liked={liked}
+                            likes={likes}
+                            imgURL={imgURL}
+                            amount={amount}
+                            name={name}
+                        />
+                    )
+                )}
             </div>
         </div>
     )
