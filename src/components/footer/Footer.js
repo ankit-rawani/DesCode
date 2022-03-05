@@ -25,15 +25,15 @@ export default function Footer() {
                     type="text"
                     placeholder="Your Email"
                 />
-            </div>
-
-            <div>
                 <button
                     className={styles.button}
                 >
                     Email Me!
                 </button>
+            
             </div>
+
+            
 
           </section>        
         </section>

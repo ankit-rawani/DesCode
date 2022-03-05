@@ -72,12 +72,8 @@
 }
 
 .footerRowAbout{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-    grid-gap: 20px;
-    @media (max-width: 600px){
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    }
+    margin-right: 20px;
+    margin-top: 0px;
 }
 .footerRow:hover {
     color: #DA18A3;
@@ -131,8 +127,9 @@
 .searchContainer {
     border-radius: 10px;
     border: #e3e1e3 1px solid;
-    padding: 2px 10px;
-    width: 100%;
+    padding: 0px 0px 0px 10px;
+    width: 50%;
+    position: relative;
 }
 
 .searchBar {
@@ -150,14 +147,17 @@
 .button {
     background: linear-gradient(to right, #eb1484, #c81cc5);
     cursor: pointer;
-    padding: 9px 30px;
+    padding: 9px 10px;
     outline: none;
     border: none;
     border-radius: 10px;
     color: white;
     font-weight: bold;
-    position: relative;
-    left: -40px
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    width: 30%;
 }
 
 .footerEmailHead{
