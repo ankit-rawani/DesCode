@@ -1,6 +1,9 @@
 import React from 'react'
 import styles from './Footer.module.css'
 import logo from '../../images/Dark2.png'
+import fb from "../../images/icons/Social/facebook.png"
+import insta from "../../images/icons/Social/instagram.png"
+import twitter from "../../images/icons/Social/twitter.png"
 
 export default function Footer() {
     return (
@@ -10,7 +13,7 @@ export default function Footer() {
         <section className={styles.footerTitle}><div>
                 <img src={logo} alt="Main Logo" className={styles.footerImage}/>
             </div></section>
-          <section className={styles.footerAboutRow}>
+          <section className={styles.footerRow}>
               Blah blah blah
           </section>        
         </section>
@@ -59,13 +62,16 @@ export default function Footer() {
         <section className={styles.footerColumn}>
         <section className={styles.footerTitle}>Socials</section>
           <section className={styles.footerRow}>
-            Facebook
+            <p className={styles.socialPara}><img src={fb} alt="Facebook Logo" className={styles.footerSocialMedia}/>
+             Facebook</p>
           </section>
           <section className={styles.footerRow}>
-            Instagram
+          <p><img src={insta} alt="Facebook Logo" className={styles.footerSocialMedia}/>
+             Instagram</p>
           </section>
           <section className={styles.footerRow}>
-            Twitter
+          <p><img src={twitter} alt="Facebook Logo" className={styles.footerSocialMedia}/>
+             Twitter</p>
           </section>
         </section>
 

@@ -43,15 +43,6 @@
     flex: 1 0 auto;
   }
 
-  .footerAboutRow {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-    grid-gap: 20px;
-    @media (max-width: 600px){
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    }
-
-}
 
 
   .footerRow {
@@ -82,4 +73,24 @@
 .footerImage {
     margin-left: auto;
     margin-right: auto;
+}
+
+.footerSocialMedia {
+    max-height: 30%;
+    max-width: 30%;
+    display: inline-block;
+    vertical-align: middle;
+    object-fit: contain;
+    filter: invert(100%) sepia(0%) saturate(1133%) hue-rotate(76deg) brightness(112%) contrast(101%);
+    margin-right: 10px;
+}
+
+.footerRow:hover .footerSocialMedia{
+    filter: invert(17%) sepia(72%) saturate(6197%) hue-rotate(314deg) brightness(100%) contrast(112%);
+    transition: 200ms ease-in;
+    cursor: pointer;
+}
+
+.socialPara{
+    display: inline-block;
 }
