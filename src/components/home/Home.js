@@ -52,15 +52,14 @@ const HotBids = () => {
             <div className={classes.hotCont}>
                 {bidsArray.map(({ liked, likes, imgURL, amount, name, id }) => (
                     <div key={name} className={classes.cardWrapper}>
-                        <Link to={`/item/${id}`}>
-                            <NFTCard
-                                liked={liked}
-                                likes={likes}
-                                imgURL={imgURL}
-                                amount={amount}
-                                name={name}
-                            />
-                        </Link>
+                        <NFTCard
+                            liked={liked}
+                            likes={likes}
+                            imgURL={imgURL}
+                            amount={amount}
+                            name={name}
+                            idx={id}
+                        />
                     </div>
                 ))}
             </div>
