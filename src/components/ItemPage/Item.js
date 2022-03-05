@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import classes from './item.module.css'
 
 import { useParams } from 'react-router-dom'
-import AllProfileItems from '../../data/AllProfileItems'
+import getProfileItems from '../../data/getProfileItems'
 import Icon from '../Icon/Icon'
 import Checkout from '../checkout/Checkout'
 
@@ -123,7 +123,8 @@ const RightColumn = ({ pageData, setCheckout }) => {
 
 const ItemPage = () => {
     let { id } = useParams()
-    const pageData = AllProfileItems[id - 1]
+    const pageData = getProfileItems("").filter(item => (item.id.toString() === id))[0]
+    console.log(pageData)
     const [isCheckout, setCheckout] = useState(false)
 
     return (
