@@ -30,9 +30,13 @@
     text-decoration: none;
 }
 
+html {
+    background-color: var(--primaryColor);
+}
+
 body {
     overflow-x: hidden;
-    background-color: var(--primaryColor);
+    
 
 }
 
