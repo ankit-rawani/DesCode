@@ -64,7 +64,7 @@
 .sellerTitle {
     font-weight: 600;
     font-size: 28px;
-    color: #1b1a21;
+    color: var(--primarytextColor);
 }
 
 .sellerCont {
@@ -104,7 +104,7 @@
     font-weight: bold;
 
     border: 1px solid transparent;
-    background: linear-gradient(WHITE, WHITE) padding-box,
+    background: linear-gradient(var(--primaryColor), var(--primaryColor)) padding-box,
         linear-gradient(to right, #eb1484, #c81cc5) border-box;
     border-radius: 10px;
 }
