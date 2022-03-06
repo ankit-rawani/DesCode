@@ -22,7 +22,7 @@ const MobileMenu = ({ setMobile }) => {
                     <img
                         src={cross}
                         alt="Cross"
-                        className={classes.img}
+                        className={classes.img+" "+classes.closeButton}
                         onClick={() => {
                             setMobile(false)
                         }}

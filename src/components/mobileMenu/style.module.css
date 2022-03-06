@@ -6,6 +6,10 @@
     overflow: hidden;
 }
 
+.closeButton {
+    filter: var(--invert);
+}
+
 .container {
     display: flex;
     border-bottom: var(--borderColor) 1px solid;
