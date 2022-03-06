@@ -55,7 +55,7 @@ function Icon(props) {
                 <img
                     height={props.size}
                     width={props.size}
-                    src="/icons/dark-mode.svg"
+                    src="/icons/dark-mode.png"
                     alt=""
                 />
             )}
