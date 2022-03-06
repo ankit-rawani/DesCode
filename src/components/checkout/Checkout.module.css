@@ -11,8 +11,8 @@
 .modal {
     width: 586px;
     height: 480px;
-    background-color: primaryColor;
-    color: #2d2e36;
+    background-color: var(--primaryColor);
+    color: var(--secondarytextColor);
     border-radius: 20px;
     position: absolute;
     left: 50%;
@@ -42,8 +42,8 @@
 
 .tableContainer {
     margin-top: 30px;
-    border-top: 1px solid #e3e1e3;
-    border-bottom: 1px solid #e3e1e3;
+    border-top: 1px solid var(--secomdaryGrey);
+    border-bottom: 1px solid var(--secondaryGrey);
     padding: 25px 40px;
 }
 
@@ -92,7 +92,7 @@
     font-weight: 600;
 
     border: 2px solid transparent;
-    background: linear-gradient(WHITE, WHITE) padding-box,
+    background: linear-gradient(var(--primaryColor), var(--primaryColor)) padding-box,
         linear-gradient(to right, #eb1484, #c81cc5) border-box;
     border-radius: 10px;
 }

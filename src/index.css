@@ -42,6 +42,7 @@ body {
     --secondarytextColor: #2d2e36;
     --secondaryColor: #2D2E36;
     --formInputColor: #fff;
+    --secondaryGrey: #E3E1E3;
     background-color: var(--primaryColor);
 }
 
@@ -52,6 +53,7 @@ body {
     --secondarytextColor: #fff;
     --secondaryColor: #fff;
     --formInputColor: #2d2e36;
+    --secondaryGrey: #2D2E36;
     background-color: var(--primaryColor);
 }
 
