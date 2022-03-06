@@ -68,14 +68,14 @@
 }
 
 .socialMediaIconsList {
-    width: 140px;
+    width: 220px;
     display: flex;
     justify-content: space-between;
     margin: 20px auto;
 }
 
 .socialMediaIcons {
-    height: 30px;
+    height: 40px;
     margin: 4px;
     filter: invert(28%) sepia(6%) saturate(21%) hue-rotate(325deg) brightness(93%) contrast(80%);
 }
