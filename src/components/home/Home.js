@@ -9,12 +9,14 @@ import { Link } from 'react-router-dom'
 
 const Banner = () => {
     return (
-        <div className={classes.banner}>
-            <div className={classes.circle1}></div>
-            <div className={classes.circle2}></div>
-            <div className={classes.bannerContent}>
-                Discover, collect, and sell <br />
-                extraordinary NFTs
+        <div className={classes.bannerWrapper}>
+            <div className={classes.banner}>
+                <div className={classes.circle1}></div>
+                <div className={classes.circle2}></div>
+                <div className={classes.bannerContent}>
+                    Discover, collect, and sell <br />
+                    extraordinary NFTs
+                </div>
             </div>
         </div>
     )
@@ -72,7 +74,7 @@ export default function Home() {
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
-    
+
     return (
         <div className={classes.container}>
             <Banner />
