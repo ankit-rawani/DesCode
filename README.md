@@ -2,7 +2,7 @@
 
 This site is hosted [here](https://sad-nightingale-600888.netlify.app/)
 
----------------------------------------------------------------------------
+---
 
 ## Available Scripts
 
