@@ -32,16 +32,27 @@
 
 body {
     overflow-x: hidden;
+
 }
 
 .light {
     --primaryColor: #fff;
     --primaryGrey: #888888;
+    --primarytextColor: #1B1A21;
+    --secondarytextColor: #2d2e36;
+    --secondaryColor: #2D2E36;
+    --formInputColor: #fff;
+    background-color: var(--primaryColor);
 }
 
 .dark {
     --primaryColor: #24252D;
-    --primaryGrey: #888888;
+    --primaryGrey: #ffffff;
+    --primarytextColor: #fff;
+    --secondarytextColor: #fff;
+    --secondaryColor: #fff;
+    --formInputColor: #2d2e36;
+    background-color: var(--primaryColor);
 }
 
 
