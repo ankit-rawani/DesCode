@@ -5,8 +5,9 @@ import insta from '../../images/icons/Social/instagram.svg'
 import twitter from '../../images/icons/Social/twitter.svg'
 import telegram from '../../images/icons/Social/telegram.svg'
 import discord from '../../images/icons/Social/discord.svg'
+import Icon from '../Icon/Icon'
 
-export default function Footer() {
+export default function Footer(props) {
     return (
         <section>
             <section className={styles.footerContainer}>
@@ -19,6 +20,9 @@ export default function Footer() {
                                     alt="Main Logo"
                                     className={styles.footerImage}
                                 />
+                            </div>
+                            <div onClick={() => props.setDarkMode(!props.darkMode)} className={styles.darkModeButton}>
+                                <Icon name="dark-mode" size="24" />
                             </div>
                         </section>
                         <p className={styles.footerEmailHead}>

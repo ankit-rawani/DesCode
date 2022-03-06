@@ -50,6 +50,15 @@ function Icon(props) {
                     alt=""
                 />
             )}
+
+            {props.name === 'dark-mode' && (
+                <img
+                    height={props.size}
+                    width={props.size}
+                    src="/icons/dark-mode.svg"
+                    alt=""
+                />
+            )}
         </span>
     )
 }

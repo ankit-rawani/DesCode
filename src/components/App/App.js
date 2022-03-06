@@ -14,19 +14,21 @@ import Profile from '../Profile/Profile'
 import CreateItem from '../createItem/CreateItem'
 import ItemPage from '../ItemPage/Item'
 import ErrorPage from '../error'
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
+    const [darkMode, setDarkMode] = useState(false);
+
     useEffect(() => {
-      if (window.matchMedia) {
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        if (darkMode) {
             document.getElementById("root").classList.add('dark');
+            document.getElementById("root").classList.remove('light');
 
         }else {
             document.getElementById("root").classList.add('light');
+            document.getElementById("root").classList.remove('dark');
         }
-      }
-    }, []);
+    }, [darkMode]);
 
 
     return (
@@ -51,7 +53,7 @@ function App() {
                     <Route path="*" element={<ErrorPage />} />
                 </Routes>
             </Router>
-            <Footer />
+            <Footer darkMode={darkMode} setDarkMode={(e) => setDarkMode(e)} />
         </>
     )
 }
