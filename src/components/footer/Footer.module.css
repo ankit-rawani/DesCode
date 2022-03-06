@@ -88,6 +88,7 @@
 .footerSocialMedia {
     height: 30px;
     margin: 4px;
+    filter: var(--invert);
 }
 
 .footerSocialMedia:hover {
