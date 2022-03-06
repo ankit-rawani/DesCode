@@ -36,7 +36,7 @@ export default function Footer() {
                         </section>
                     </section>
                     <section className={styles.footerColumn}>
-                        <section className={styles.footerTitle}>
+                        <section className={`${styles.footerTitle} ${styles.footerRow}`}>
                             Graphique NFT
                         </section>
                         <section className={styles.footerRow}>Explore</section>
@@ -48,7 +48,7 @@ export default function Footer() {
                         </section>
                     </section>
                     <section className={styles.footerColumn}>
-                        <section className={styles.footerTitle}>
+                        <section className={`${styles.footerTitle} ${styles.footerRow}`}>
                             Support
                         </section>
                         <section className={styles.footerRow}>
