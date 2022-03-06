@@ -128,8 +128,6 @@
     margin-left: -40px;
     margin-top: 2px;
     pointer-events: none;
-    color: var(--primarytextColor);
-    filter: invert(80%);
 }
 
 .formTextInput {
