@@ -54,6 +54,7 @@ body {
     background-color: var(--primaryColor);
     --invert: invert(0);
     --seller-card-border: #e3e1e3;
+    --navSearchBG: #fff;
 }
 
 .dark {
@@ -70,6 +71,7 @@ body {
     background-color: var(--primaryColor);
     --invert: invert(100%) sepia(96%) saturate(15%) hue-rotate(212deg) brightness(104%) contrast(104%);
     --seller-card-border: #2A2D3A;
+    --navSearchBG: #1B1A21;
 }
 
 
