@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import classes from './item.module.css'
 
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import getProfileItems from '../../data/getProfileItems'
 import getUsers from '../../data/getUsers'
 import Icon from '../Icon/Icon'
@@ -82,14 +82,16 @@ const RightColumn = ({ pageData, setCheckout }) => {
             <div>
                 <div className={classes.creator}>Creator</div>
 
-                <div className={classes.creatorWrapper}>
-                    <img
-                        className={classes.creatorImg}
-                        src={user.img}
-                        alt="creator"
-                    ></img>
-                    <div className={classes.creatorName}>{user.name}</div>
-                </div>
+                <Link to={`/profile/${user.id}`}>
+                    <div className={classes.creatorWrapper}>
+                        <img
+                            className={classes.creatorImg}
+                            src={user.img}
+                            alt="creator"
+                        ></img>
+                        <div className={classes.creatorName}>{user.name}</div>
+                    </div>
+                </Link>
             </div>
 
             <div>
