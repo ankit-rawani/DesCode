@@ -1,14 +1,14 @@
 .cont {
     height: 100vh;
     width: 100vw;
-    background-color: white;
+    background-color: var(--primaryColor);
     top: 0;
     overflow: hidden;
 }
 
 .container {
     display: flex;
-    border-bottom: #e3e1e3 1px solid;
+    border-bottom: var(--borderColor) 1px solid;
     align-items: center;
     justify-content: space-between;
     padding: 30px 30px;
@@ -24,6 +24,7 @@
 
 .navLink {
     margin: 15px 0;
+    color: var(--primarytextColor);
 }
 
 .navFooter {
@@ -31,7 +32,7 @@
     bottom: 0px;
     width: 100vw;
     padding: 30px;
-    border-top: #e3e1e3 1px solid;
+    border-top: var(--borderColor) 1px solid;
 }
 
 .footerWrapper {
@@ -58,7 +59,8 @@
     font-weight: bold;
 
     border: 1px solid transparent;
-    background: linear-gradient(WHITE, WHITE) padding-box,
+    background: linear-gradient(var(--primaryColor), var(--primaryColor))
+            padding-box,
         linear-gradient(to right, #eb1484, #c81cc5) border-box;
     border-radius: 10px;
 }
