@@ -20,17 +20,8 @@
     margin-top: 20px;
     padding: 5%;
     border-radius: 10px;
-    background: linear-gradient(
-            to right,
-            var(--primaryGrey) 50%,
-            rgba(255, 255, 255, 0) 0%
-        ),
-        linear-gradient(var(--primaryGrey) 50%, rgba(255, 255, 255, 0) 0%),
-        linear-gradient(to right, var(--primaryGrey) 50%, rgba(255, 255, 255, 0) 0%),
-        linear-gradient(var(--primaryGrey) 50%, rgba(255, 255, 255, 0) 0%);
-    background-position: top, right, bottom, left;
-    background-repeat: repeat-x, repeat-y;
-    background-size: 20px 2px, 2px 20px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='7' ry='7' stroke='black' stroke-width='3' stroke-dasharray='14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    filter: var(--dashedborder);
 }
 
 .title {
