@@ -1,3 +1,4 @@
+
 .FormPage {
     font-size: 14px;
     max-width: 600px;
@@ -5,7 +6,9 @@
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px;
+    background-color: var(--primaryColor);
 }
+
 
 .uploadBox {
     display: flex;
@@ -18,12 +21,12 @@
     border-radius: 10px;
     background: linear-gradient(
             to right,
-            #888888 50%,
+            var(--primaryGrey) 50%,
             rgba(255, 255, 255, 0) 0%
         ),
-        linear-gradient(#888888 50%, rgba(255, 255, 255, 0) 0%),
-        linear-gradient(to right, #888888 50%, rgba(255, 255, 255, 0) 0%),
-        linear-gradient(#888888 50%, rgba(255, 255, 255, 0) 0%);
+        linear-gradient(var(--primaryGrey) 50%, rgba(255, 255, 255, 0) 0%),
+        linear-gradient(to right, var(--primaryGrey) 50%, rgba(255, 255, 255, 0) 0%),
+        linear-gradient(var(--primaryGrey) 50%, rgba(255, 255, 255, 0) 0%);
     background-position: top, right, bottom, left;
     background-repeat: repeat-x, repeat-y;
     background-size: 20px 2px, 2px 20px;
@@ -41,7 +44,7 @@
 .input,
 .textarea,
 .formTextInput {
-    border: 1px solid #888888;
+    border: 1px solid var(--primaryGrey);
     border-radius: 10px;
     margin-top: 20px;
     padding: 17px 25px;
@@ -114,11 +117,11 @@
     border: none;
     outline: none;
     font-weight: 600;
-    color: #888888;
+    color: var(--primaryGrey);
 }
 
 .price {
-    border: 1px #888888 solid;
+    border: 1px var(--primaryGrey) solid;
     border-radius: 10px;
 }
 

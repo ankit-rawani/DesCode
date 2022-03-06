@@ -14,8 +14,21 @@ import Profile from '../Profile/Profile'
 import CreateItem from '../createItem/CreateItem'
 import ItemPage from '../ItemPage/Item'
 import ErrorPage from '../error'
+import { useEffect } from 'react';
 
 function App() {
+    useEffect(() => {
+      if (window.matchMedia) {
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.getElementById("root").classList.add('dark');
+
+        }else {
+            document.getElementById("root").classList.add('light');
+        }
+      }
+    }, []);
+
+
     return (
         <>
             <Router>

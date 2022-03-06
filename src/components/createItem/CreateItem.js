@@ -4,6 +4,7 @@ import imageIcon from '../../images/icons/Image.svg'
 import Icon from '../Icon/Icon'
 
 const CreateItem = () => {
+
     return (
         <>
             <div className={styles.FormPage}>
