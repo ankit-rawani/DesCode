@@ -77,7 +77,7 @@
 .socialMediaIcons {
     height: 40px;
     margin: 4px;
-    filter: invert(28%) sepia(6%) saturate(21%) hue-rotate(325deg) brightness(93%) contrast(80%);
+    filter: var(--invert);
 }
 
 .socialMediaIcons:hover {
