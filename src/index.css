@@ -60,7 +60,7 @@ body {
     --invert: invert(0);
     --seller-card-border: #e3e1e3;
     --navSearchBG: #fff;
-    --dashedborder: invert(57%) sepia(3%) saturate(10%) hue-rotate(8deg) brightness(93%) contrast(92%);
+    --dashedborder: invert(0) sepia(3%) saturate(10%) hue-rotate(8deg) brightness(93%) contrast(92%);
 }
 
 .dark {

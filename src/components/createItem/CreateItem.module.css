@@ -57,7 +57,7 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 21px;
-    color: var(--secondarytextColor);
+    color: #000;
 }
 
 .submit {
@@ -101,7 +101,7 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
-    color: var(--secondarytextColor);
+    color: #000;
     text-align: center;
 }
 
