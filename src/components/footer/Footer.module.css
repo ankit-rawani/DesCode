@@ -116,13 +116,14 @@
     border-radius: 10px 0 0 10px;
     border: var(--borderColor) 1px solid;
     padding: 12px 18px;
-    background-color: white;
+    background-color: var(--formInputColor);
 }
 
 .searchBar {
     outline: none;
     border: none;
     width: 100%;
+    background-color: var(--formInputColor);
 }
 
 .button {

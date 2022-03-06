@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Footer.module.css'
 import logo from '../../images/Light2.png'
+import darkLogo from '../../images/Dark2.png'
 import insta from '../../images/icons/Social/instagram.svg'
 import twitter from '../../images/icons/Social/twitter.svg'
 import telegram from '../../images/icons/Social/telegram.svg'
@@ -15,11 +16,8 @@ export default function Footer(props) {
                     <section className={styles.footerAboutCol}>
                         <section className={styles.footerTitle}>
                             <div>
-                                <img
-                                    src={logo}
-                                    alt="Main Logo"
-                                    className={styles.footerImage}
-                                />
+                                {props.darkMode && <img src={darkLogo} alt="Main logo" className={styles.footerImage} />}
+                                {!props.darkMode && <img src={logo} alt="Main logo" className={styles.footerImage} />}
                             </div>
                             <div onClick={() => props.setDarkMode(!props.darkMode)} className={styles.darkModeButton}>
                                 <Icon name="dark-mode" size="24" />
