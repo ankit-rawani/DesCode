@@ -39,38 +39,27 @@ const CreateItem = () => {
                     ></input>
                     <div className={styles.label}>Description</div>
                     <textarea
+                        rows="5"
                         className={styles.textarea}
                         placeholder="Description"
                     ></textarea>
                     <div className={styles.label}>Price</div>
-                    {/* <div className={styles.price}>
-            <input type="text" className={styles.inputPrice} placeholder="Price">
-            </input>
-            <select className={styles.select}>
-                <option>ETH</option>
-                <option>BIT</option>
-            </select>
-            </div> */}
-                    <div
-                        className={
-                            styles.formTextInput + ' ' + styles.filterInput
-                        }
-                    >
-                        <input type="text" placeholder="Price" readOnly />
-
-                        <select className={styles.select}>
+                    <div className={styles.formTextInput}>
+                        <input type="text" placeholder="Price" />
+                        <select id="crypto-choose" className={styles.select}>
                             <option>ETH</option>
                             <option>BIT</option>
                         </select>
-                        <Icon name="down" size="24" />
+                        <div className={styles.priceIcon}><Icon name="down" size="18" /></div>
                     </div>
-                    <button
-                        type="submit"
-                        value="Create"
-                        className={styles.submit}
-                    >
-                        Create Item
-                    </button>
+                    <div className={styles.buttonContainer}>
+                        <button
+                            type="submit"
+                            className={styles.submit}
+                        >
+                            Create Item
+                        </button>
+                    </div>
                 </form>
             </div>
         </>
