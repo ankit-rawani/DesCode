@@ -40,10 +40,13 @@ body {
     --primaryGrey: #888888;
     --primarytextColor: #1B1A21;
     --secondarytextColor: #2d2e36;
+    --card-bg: #fff;
     --secondaryColor: #2D2E36;
     --formInputColor: #fff;
     --secondaryGrey: #E3E1E3;
     background-color: var(--primaryColor);
+    --invert: invert(0);
+    --seller-card-border: #e3e1e3;
 }
 
 .dark {
@@ -51,10 +54,13 @@ body {
     --primaryGrey: #ffffff;
     --primarytextColor: #fff;
     --secondarytextColor: #fff;
+    --card-bg: #2A2D3A;
     --secondaryColor: #fff;
     --formInputColor: #2d2e36;
     --secondaryGrey: #2D2E36;
     background-color: var(--primaryColor);
+    --invert: invert(1);
+    --seller-card-border: #2A2D3A;
 }
 
 

@@ -2,9 +2,9 @@
     display: inline-block;
     font-family: 'Poppins', sans-serif;
     border-radius: 20px;
-    border: 1px solid #e3e1e3;
-    background-color: #ffffff;
-    color: #1b1a21;
+    border: 1px solid var(--seller-card-border);
+    background-color: var(--card-bg);
+    color: var(--primarytextColor);
     padding: 11px;
     width: 180px;
     height: 200px;
