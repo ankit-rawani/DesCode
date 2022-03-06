@@ -2,6 +2,7 @@
     text-align: center;
     margin: 60px 0;
     color: var(--primarytextColor);
+    height: 35vh;
 }
 
 .heading {
