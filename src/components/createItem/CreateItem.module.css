@@ -38,7 +38,9 @@
     color: #2d2e36;
 }
 
-.input, .textarea, .formTextInput {
+.input,
+.textarea,
+.formTextInput {
     border: 1px solid #888888;
     border-radius: 10px;
     margin-top: 20px;
@@ -153,7 +155,8 @@
         line-height: 30px;
     }
 
-    .uploadBox, .uploadTitle {
+    .uploadBox,
+    .uploadTitle {
         font-size: 14px;
         line-height: 21px;
     }

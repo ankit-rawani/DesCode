@@ -50,13 +50,12 @@ const CreateItem = () => {
                             <option>ETH</option>
                             <option>BIT</option>
                         </select>
-                        <div className={styles.priceIcon}><Icon name="down" size="18" /></div>
+                        <div className={styles.priceIcon}>
+                            <Icon name="down" size="18" />
+                        </div>
                     </div>
                     <div className={styles.buttonContainer}>
-                        <button
-                            type="submit"
-                            className={styles.submit}
-                        >
+                        <button type="submit" className={styles.submit}>
                             Create Item
                         </button>
                     </div>
