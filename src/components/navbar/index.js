@@ -3,12 +3,15 @@ import styles from './style.module.css'
 import { useNavigate, useLocation } from 'react-router-dom'
 
 import logo from '../../images/Light2.png'
+import logoDark from '../../images/Dark2.png'
 import menu from '../../images/icons/Menu.png'
 import MobileMenu from '../mobileMenu/index.js'
+import Icon from '../Icon/Icon'
 
-export default function Nav() {
+export default function Nav(props) {
     const navigate = useNavigate()
     const [mobileMenu, setMobile] = useState(false)
+    const [searchText, setSearchText] = useState("")
     const { pathname } = useLocation()
 
     return (
@@ -21,21 +24,42 @@ export default function Nav() {
             ) : null}
             <div className={styles.container}>
                 <div>
-                    <img
-                        src={logo}
-                        alt="Main Logo"
-                        className={styles.img}
-                        onClick={() => {
-                            navigate('/')
-                        }}
-                    />
+                    {
+                        !props.darkMode ? (
+                        <img
+                            src={logo}
+                            alt="Main Logo"
+                            className={styles.img}
+                            onClick={() => {
+                                navigate('/')
+                            }}
+                        />
+                        ) : (
+                        <img
+                            src={logoDark}
+                            alt="Main Logo"
+                            className={styles.img}
+                            onClick={() => {
+                                navigate('/')
+                            }}
+                        />
+                        )
+                    }
                 </div>
                 <div className={styles.searchContainer}>
-                    <input
-                        className={styles.searchBar}
-                        type="text"
-                        placeholder="Search item here"
-                    />
+                    <div
+                        className={
+                            styles.formTextInput + ' ' + styles.searchInput
+                        }
+                    >
+                        <Icon name="search" size="24" />
+                        <input
+                            onChange={e => setSearchText(e.target.value)}
+                            type="text"
+                            value={searchText}
+                            placeholder="Search item here"
+                        />
+                    </div>
                 </div>
                 <div
                     className={`${styles.navLink} ${

@@ -34,7 +34,7 @@ function App() {
     return (
         <>
             <Router>
-                <Nav />
+                <Nav darkMode={darkMode} />
                 <Routes>
                     <Route
                         exact
