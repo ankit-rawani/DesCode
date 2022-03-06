@@ -7,7 +7,7 @@ The people who stayed up all night for this challenge are: \
 Sneha \
 Ankit \
 Karthik \
-Ananad \
+Anand \
 Yuvaraja 
 
 The website is hosted [here](https://sad-nightingale-600888.netlify.app/)\
@@ -16,14 +16,20 @@ Develpoed with ❤️‍🔥 by teamX
 ## Features
 All the features mentioned in the problem statement have been inplemented in the website. These include:
 - Homepage
-- 
+- Profile page for every artist
+- Item page for every NFT
+- A page to create items
+- Checkout and Payment successful components
+- Mobile Menu in Nav bar
+- Responsive in all dimensions
   
 Additionally we have incoporated a set of extra features: 
-- Search functionality for items in profile page.
-- Button to toggle between light mode and dark mode.
-- Separate profile page for every artist.
+- Search functionality for items in profile page
+- Button to toggle between light mode and dark mode
 - Drag and drop files to upload in the create page
-  
+- Custom Error and Not Found pages
+
+<sub> NOTE: Some creative license has been taken in few components to make it more accessible (for example, a horizontal scroll bar in the Top Sellers component in smaller desktop sizes.) </sub>
 
 
 ## Requirements
