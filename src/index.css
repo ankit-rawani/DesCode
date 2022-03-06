@@ -32,12 +32,14 @@
 
 body {
     overflow-x: hidden;
+    background-color: var(--primaryColor);
 
 }
 
 .light {
     --primaryColor: #fff;
     --primaryGrey: #888888;
+    --borderColor: #e3e1e3;
     --primarytextColor: #1B1A21;
     --secondarytextColor: #2d2e36;
     --card-bg: #fff;
@@ -52,6 +54,7 @@ body {
 .dark {
     --primaryColor: #24252D;
     --primaryGrey: #ffffff;
+    --borderColor: #2D2E36;
     --primarytextColor: #fff;
     --secondarytextColor: #fff;
     --card-bg: #2A2D3A;

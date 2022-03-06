@@ -1,9 +1,9 @@
 .footerContainer {
     margin-top: 0px;
-    border: 1px solid #e3e1e3;
-    border-left: #e3e1e3;
-    border-right: #e3e1e3;
-    background: white;
+    border: 1px solid var(--borderColor);
+    border-left: var(--borderColor);
+    border-right: var(--borderColor);
+    background: var(--primaryColor);
 }
 
 .footerWrapper {
@@ -11,7 +11,7 @@
     justify-content: space-between;
     max-width: 1000px;
     margin: auto;
-    color: #1b1a21;
+    color: var(--primarytextColor);
     flex-wrap: wrap;
     padding: 25px 19px;
 }
@@ -48,7 +48,7 @@
 
 .footerTitle {
     font-size: 24px;
-    color: #1b1a21;
+    color: var(--primarytextColor);
     font-weight: bold;
     margin-top: 32px;
     margin-bottom: 20px;
@@ -104,7 +104,7 @@
     padding-left: 19px;
     text-align: left;
     font-weight: bold;
-    color: #1b1a21;
+    color: var(--primarytextColor);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -112,8 +112,9 @@
 
 .searchContainer {
     border-radius: 10px 0 0 10px;
-    border: #e3e1e3 1px solid;
+    border: var(--borderColor) 1px solid;
     padding: 12px 18px;
+    background-color: white;
 }
 
 .searchBar {
@@ -156,9 +157,13 @@
 
     .searchContainer {
         color: #1b1a21;
-        background-color: white;
+        background-color: var(--secondarytextColor);
         font-size: 12px;
         line-height: 18px;
+    }
+
+    .searchBar {
+        background-color: var(--secondarytextColor);
     }
 
     .footerAboutCol {
