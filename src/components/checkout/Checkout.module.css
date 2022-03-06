@@ -42,7 +42,7 @@
 
 .tableContainer {
     margin-top: 30px;
-    border-top: 1px solid var(--secomdaryGrey);
+    border-top: 1px solid var(--secondaryGrey);
     border-bottom: 1px solid var(--secondaryGrey);
     padding: 25px 40px;
 }
