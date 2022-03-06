@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from './Profile.module.css'
 import Icon from '../Icon/Icon'
 import NFTCard from '../NFTCard/NFTCard'
@@ -11,6 +11,10 @@ import getUsers from '../../data/getUsers'
 function Profile() {
     const [searchText, setSearchText] = useState('')
     const params = useParams()
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     const user = getUsers(params.id)[0]
     if (user) {

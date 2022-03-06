@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import classes from './Home.module.css'
 
 import SellerCard from '../SellerCard/SellerCard.js'
@@ -68,6 +68,11 @@ const HotBids = () => {
 }
 
 export default function Home() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+    
     return (
         <div className={classes.container}>
             <Banner />

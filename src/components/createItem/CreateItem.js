@@ -1,10 +1,13 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import styles from './CreateItem.module.css'
 import imageIcon from '../../images/icons/Image.svg'
 import Icon from '../Icon/Icon'
 
 const CreateItem = () => {
-
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+    
     return (
         <>
             <div className={styles.FormPage}>

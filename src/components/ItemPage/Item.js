@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import classes from './item.module.css'
 
 import { useParams, Link } from 'react-router-dom'
@@ -147,6 +147,10 @@ const ItemPage = () => {
     const [isCheckout, setCheckout] = useState(false)
     const [paymentStatus, setPaymentStatus] = useState(false)
     const user = getUsers(pageData.author)[0]
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return pageData ? (
         <div className={classes.container}>
