@@ -26,7 +26,6 @@ All the features mentioned in the problem statement have been inplemented in the
 Additionally we have incoporated a set of extra features: 
 - Search functionality for items in profile page
 - Button to toggle between light mode and dark mode
-- Drag and drop files to upload in the create page
 - Custom Error and Not Found pages
 
 <sub> NOTE: Some creative license has been taken in few components to make it more accessible (for example, a horizontal scroll bar in the Top Sellers component in smaller desktop sizes.) </sub>
