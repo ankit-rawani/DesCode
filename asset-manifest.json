@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3c73ba6b.css",
+    "main.js": "/static/js/main.a6faa6a0.js",
+    "static/js/787.e075ff33.chunk.js": "/static/js/787.e075ff33.chunk.js",
+    "static/media/GothamBook.ttf": "/static/media/GothamBook.58fb9151c57e59668f17.ttf",
+    "static/media/GothamBold.ttf": "/static/media/GothamBold.108854bb27dee2dce854.ttf",
+    "static/media/GothamBookItalic.ttf": "/static/media/GothamBookItalic.3de1b843c5051c30b486.ttf",
+    "static/media/GothamBoldItalic.ttf": "/static/media/GothamBoldItalic.e1d2f7658509d2685be6.ttf",
+    "static/media/instagram.svg": "/static/media/instagram.587ae554aece161de1aca2df97a37284.svg",
+    "static/media/discord.svg": "/static/media/discord.65980add4c3137af8b47a6094f721053.svg",
+    "static/media/Image.svg": "/static/media/Image.970502258bcdcb5729243ab7cade0e5a.svg",
+    "static/media/twitter.svg": "/static/media/twitter.9559bca5d1ff7fc3fa5d4334e5755815.svg",
+    "index.html": "/index.html",
+    "static/media/telegram.svg": "/static/media/telegram.e6d0fd546800e48d7d21d2d68e63d39f.svg",
+    "main.3c73ba6b.css.map": "/static/css/main.3c73ba6b.css.map",
+    "main.a6faa6a0.js.map": "/static/js/main.a6faa6a0.js.map",
+    "787.e075ff33.chunk.js.map": "/static/js/787.e075ff33.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3c73ba6b.css",
+    "static/js/main.a6faa6a0.js"
+  ]
+}
